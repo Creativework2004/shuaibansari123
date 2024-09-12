@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head><title>move website</title>
+<mead name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<style>
+body{
+margin-top:0px;
+
+}
+
+
+@keyframes  ani1
+{
+
+9%{left:0%;}
+18%{left:-15%;}
+27%{left:-15%;}
+36%{left:-30%;}
+45%{left:-30%;}
+
+54%{left:-45%;}
+63%{left:-45%;}
+
+72%{left:-60%;}
+81%{left:-60%;}
+
+90%{left:-75%;}
+100%{left:-75%;}
+
+}
+
+
+#banner
+{
+width:680%;
+//background:red;
+box-shadow:10px 10px 10px gray;
+height:768px;
+margin-top:2px;
+}
+.pic
+{
+width:15%;
+height:768px;
+position:relative;
+margin-left:-3px;
+animation: ani1 10s ease-out infinite alternate;
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)
+ 
+{
+            body{
+                   background:green;
+                }
+		#banner{
+			height:150px;
+		.pic{height:150px;}
+
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) 
+{
+	body{
+                   background:blue;
+                }
+		#banner{
+			height:250px;
+		.pic{height:250px;}
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+{
+		body{
+                   background:cyan;
+                }
+		#banner{
+			height:350px;
+		.pic{height:350px;}
+
+
+}
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) 
+{
+body{
+                   background:yellow;
+                }
+		#banner{
+			height:600px;
+		.pic{height:600px;}
+
+
+
+}
+
+
+
+</style>
+
+
+<body>
+<div id="banner">
+<img class="pic" src="images/m1.jpg">
+<img class="pic" src="images/m2.jpg">
+<img class="pic" src="images/m3.jpg">
+<img class="pic" src="images/m4.jpg">
+<img class="pic" src="images/m5.jpg">
+</div>
+
+</body>
+
+
+
+
+</body>
+</html>

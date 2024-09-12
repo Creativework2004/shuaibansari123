@@ -1,0 +1,81 @@
+<!Doctype  html>
+<head>
+<title>movie trailers</title>
+
+</head>
+<style>
+#box1
+{
+display:inline-block;
+height:250px;
+width:250px;
+border-radius:20px;
+border:2px white solid;
+background-image:linear-gradient(#041b2d,#004e9a,#428cd4,#ff9cda,#ea4492);
+flot:left;
+}
+
+#box2
+{
+display:inline-block;
+height:250px;
+width:250px;
+margin-left:40px;
+border:2px white solid;
+background-image:conic-gradient(#df825f,#f8956f,#dfb15b,#4d446f,#706695);
+}
+
+#box3
+{
+display:inline-block;
+height:250px;
+width:250px;
+margin-left:40px;
+border-radius:200px;
+border:2px white solid;
+background-image:radial-gradient(#3b5284,#5baba0,#cbe54e,#94b447,#5d6e1e);
+}
+
+</style>
+<body>
+
+<pre>
+
+Linear Gradients (goes down/up/left/right/diagonally)
+Radial Gradients (defined by their center)
+Conic Gradients (rotated around a center point)
+
+background-image: linear-gradient(to right, rgba(255,0,0,0),
+background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+
+background-image: conic-gradient(red, yellow, green);
+background-image: conic-gradient(red, yellow, green, blue, black);
+background-image: conic-gradient(red 45deg, yellow 90deg, green 210deg);
+
+// CIRCULAR
+background-image: conic-gradient(red, yellow, green, blue, black);
+border-radius: 50%;
+
+// PATTERN
+background-image: repeating-conic-gradient(red 10%, yellow 20%);
+border-radius: 50%;
+
+// RADIAL
+background-image: radial-gradient(red, yellow, green);
+background-image: radial-gradient(red 5%, yellow 15%, green 60%);
+
+background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+</pre>
+
+<div id="box1">
+</div>
+
+<div id="box2">
+</div>
+
+<div id="box3">
+</div>
+
+</body>
+
+</html>
