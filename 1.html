@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<style>
+
+body{
+margin:0px;
+}
+
+#back
+{
+    width:50%;
+    background:blue;
+}
+
+#bg
+{
+width:100%;
+margin:auto;
+}
+</style>
+
+
+<body>
+    <div id="back">
+    <div id="bg">
+        <video id="video" autoplay loop muted style="width:200%" ;>
+        <source src="imagejs/app.mp4" type="video/mp4" >
+        Your browser does not support video
+        </video>
+        </div>
+    </div>
+
+
+<script>
+
+
+function redirect()
+{
+
+
+    //alert("redirecting....!")
+     //document.bgColor="green"
+     window.location="loop.html"
+
+}
+
+function sttimer()
+{
+    clearInterval(t1)
+    alert("timer is stoped")
+}
+
+var t1 = setTimeout("redirect()",3000)
+
+</script>
+</body>
+</html>

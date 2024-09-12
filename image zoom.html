@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    #card
+    {
+        width:100%;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+align-content:space-around;
+        margin-top:20px;
+    }
+
+    .card
+{
+width:17%;
+//height:500px;
+//box-shadow:10px 10px 10px gray;
+text-align:center;
+}
+
+    .pic
+{
+width:90%;
+//height:350px;
+margin:2px;
+//border-radius:5%;
+cursor:pointer;
+transition:1.0s;
+
+}
+
+.pic:hover
+{
+transform:scale(1.04);
+border-radius:0%;
+//box-shadow:5px 5px 75px #643843;
+}
+
+.info
+{
+margin-left:30%;
+list-style:none;
+padding:0px;
+text-align:left;
+}
+</style>
+<body>
+    
+    <script>
+var p = document.createElement("img")
+document.body.appendChild(p)
+p.src="imagejs/n1.png"
+p.style = "opacity:0.70;transition:0.50s;coursor:zoom-in;margin:auto;display:block;margin-top:20px; width:400px;"
+
+var r = 0
+p.onwheel = function(event)
+{
+r = Math.round(event.deltaY)
+
+
+if((event.deltaY == 108)||(r == 100))
+{
+    this.style.transform="scale(1.5)"
+    this.style.opacity="1"
+}
+
+if((event.deltaY == -108)||(r == -100))
+{
+    this.style.transform="scale(1)"
+    this.style.opacity="0.70"
+}
+
+}
+
+    </script>
+    <div id="card">
+        <div class="card"><img src="imagejs/n2.jpg"class="pic">
+            
+            </div>
+            
+            <div class="card"><img src="imagejs/n3.jpg"class="pic">
+            
+            </div>
+            
+            <div class="card"><img src="imagejs/n4.jpg"class="pic">
+            
+            </div>
+            
+            <div class="card"><img src="imagejs/n5.jpg"class="pic">
+            
+            </div>
+            
+            
+            <div class="card"><img src="imagejs/n6.jpg"class="pic">
+            
+            </div>
+            
+            <div class="card"><img src="imagejs/n7.jpg"class="pic">
+            
+            </div>
+            
+            <div class="card"><img src="imagejs/n8.jpg"class="pic">
+            
+            </div>
+            
+            <div class="card"><img src="imagejs/n9.jpg"class="pic">
+            
+            </div>
+            
+            <div class="card"><img src="imagejs/n10.jpg"class="pic">
+            
+            </div>
+            
+            
+            <div class="card"><img src="imagejs/n11.jpg"class="pic">
+            
+            </div>  
+      </div>
+        </body>
+    
+</body>
+</html>

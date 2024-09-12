@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h1 id="about"></h1>
+    
+        <script>
+            var mypic = document.createElement("img")
+             document.body.appendChild(mypic)
+            mypic.src="imagejs/car.png"
+          mypic.style="transition:0.7s;cursor:pointer;margin-left:10px;"
+            mypic.style.width="30%"
+           window.document.title="Ready"
+            var d = document.getElementById("about")
+            d.innerHTML="Running Car"
+          // Event handling
+
+            mypic.onclick = function()
+            {
+                this.style.marginLeft ="1200px"
+              
+            }
+
+         
+
+
+
+        </script>
+
+
+
+
+
+
+</body>
+</html>

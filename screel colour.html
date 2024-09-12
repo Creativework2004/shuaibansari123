@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    a:link{color:black;text-decoration:none;}
+a:visited{color:black}
+a:hover{text-decoration:underline none;color:#011425}
+a:active{}
+
+    #bar
+    {
+        width:100%;
+        height:80px;
+        background:blue;
+        text-align:center;
+        font-size:50px;
+    }
+
+    #logo
+{
+    width:5%;
+    background:red;
+    margin-left:450px;
+    margin-top:-55px
+}
+
+.logo
+{
+    width:80px
+}
+
+#subject
+{
+    width:100%;
+   //background:green;
+    margin-top:30px;
+}
+
+#sub1
+{
+width:70%;
+//height:1000px;
+//background:yellow;
+margin:auto;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+
+#sub2
+{
+width:40%;
+//height:200px;
+//background:white;
+//margin:auto;
+font-family:Corbel light;
+}
+
+#box
+    {
+        width:200px;
+        background:rgb(0, 255, 200);
+        padding:30px;
+        border-radius:20px;
+        box-shadow:10px 10px 10px gray;
+        //top-300px;
+        position:relative;
+        transition:0.50; 
+    }
+
+
+#button
+{
+    width:10%;
+    background:green;
+}
+
+.img
+{
+width:30%;
+cursor:pointer;
+transition:1.0s;
+
+}
+
+.img:hover
+{
+transform:scale(1.04);
+border-radius:0%;
+//box-shadow:5px 5px 75px #643843;
+}
+
+
+    
+
+
+</style>
+<body>
+
+    <div id="bar">
+        Class 12 ALL NCERT Book
+        <div id="logo">
+           <img class="logo" src="imagejs/logo.png">
+        </div>
+        <div id="botton">
+
+        </div>
+    </div>
+
+    <div id="subject">
+<div id="sub1">
+
+<div id="sub2"><img class="img" src="imagejs/l1.png"></div><br/>    
+<div id="sub2"><img class="img" src="imagejs/l2.png"></div><br/>
+<div id="sub2"><img class="img" src="imagejs/l3.png"></div><br/>
+<div id="sub2"><img class="img" src="imagejs/l4.png"></div><br/>
+<div id="sub2"><img class="img" src="imagejs/l5.png"></div><br/>
+<div id="sub2"><img class="img" src="imagejs/l6.png"></div><br/>
+<div id="sub2"><img class="img" src="imagejs/l7.png"></div><br/>
+<div id="sub2"><img class="img" src="imagejs/l8.png"></div><br/>
+
+</div>
+
+    </div>
+    <div id="box">
+        <div>color <span id="message">color slider</span></div>
+        <input type="range" id="red" value="0" min="1" max="255">
+        <input type="range" id="green" value="0" min="1" max="255">
+        <input type="range" id="blue" value="0" min="1" max="255">
+       </div> 
+
+       <div style="height:50px" ></div>
+            <button onclick="show()">set background color</button>
+        <script>
+            var kyaboxuperhai ="ha"
+            var box = document.getElementById("box")
+            var r = document.getElementById("red")
+            var g = document.getElementById("green")
+            var b = document.getElementById("blue")
+    
+            var redcolor = 40
+            var greencolor = 40
+            var bluecolor = 40
+            var mycolor ="rgb(0,0,0)"
+            
+    
+            r.onchange=function()
+            {
+                redcolour = this.value
+                mycolor = "rgb("+redcolor+","+greencolor","+bluecolor+")"
+                document.title = mycolor
+                document.body.style.background = mycolor
+                m.innerHTML = mycolor
+    
+            }
+            g.onchange=funtion()
+            {
+                greencolor = this.value
+                mycolor = "rgb("+redcolor+","+greencolor+","+blue+")"
+                document.title = mycolor
+                document.body.style.background = mycolor
+                m.innerHTML = mycolor
+            }
+            b.onchange=funtion()
+            {
+                blue = this.value
+                mycolor = "rgb("+redcolor+","+greencolor+","+blue+")"
+                document.title = mycolor
+                document.body.style.background = mycolor
+                m.innerHTML = mycolor
+            }
+
+            function show()
+            {
+                if(kyaboxuperhai=="ha")
+            {
+                kyaboxuperhai="na"
+                box.style.top="0px"
+            }
+            else
+            {
+                kyaboxuperhi="ha"
+                box.style.top="-300px"
+            }
+            document.title=kyaboxuperhai
+            }
+        </script>
+    
+     
+    
+    
+</body>
+</html>
