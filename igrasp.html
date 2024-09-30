@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+
+body{margin:0%;}
+html{
+scroll-behavior:smooth;
+}
+
+a:link{color:rgb(255, 255, 255);text-decoration:none;}
+a:visited{color:rgb(0, 0, 0)}
+a:hover{text-decoration:underline none;color:rgb(82, 82, 82)}
+a:active{}
+
+  #video
+  {
+    width:100%;
+    //height:50px;
+    margin:auto;
+    
+   //background:blue;
+  }
+
+  #myvideo
+  {
+    width:100%;
+    margin:auto;
+    margin-top:10px;
+    //height:60px;
+  }
+
+    #bar
+    {
+      width:100%;
+      height:20px;
+      //background:#6482AD;
+      //background:black;
+      //margin-top:30px;
+      margin:auto;
+      display:flex;
+      flex-wrap:warp;
+      content:space-between;
+      //display:block;
+      //position:fixed;
+      //z-index:5;
+    }
+
+    #menu
+{
+width:99%;
+background:white;
+margin:auto;
+display:flex;
+flex-wrap:warp;
+justify-content:space-between;
+}
+
+#menu2
+{
+width:65%;
+margin:auto;
+font-size:20px;
+//height:80px;
+//background:yellow;
+//margin-left:380px;
+//margin-top:-80px;
+display:flex;
+flex-wrap:warp;
+justify-content:space-between;
+}
+
+    #about
+    {
+      width:98%;
+      //height: 300px;
+      margin-top:30px;
+      font-size:40px;
+      color:white;
+      //background: green;
+      margin:auto;
+    }
+
+    #about2
+    {
+      width:98%;
+      margin:auto;
+      color:white;
+      margin-top:20px;
+      font-size:23px;
+    }
+
+    #portals
+    {
+      width:98%;
+      //height: 300px;
+      margin-top:80px;
+      font-size:40px;
+      color:white;
+      //background: green;
+      margin:auto;
+    }
+
+
+    #portals2
+    {
+      width:98%;
+      //height: 300px;
+      margin-top:30px;
+      font-size:40px;
+      color:white;
+      //background: green;
+      margin:auto;
+      display:flex;
+      flex-wrap:warp;
+      justify-content:space-between;
+    }
+
+    #circle
+    {
+      width:7%;
+      //background:red;
+      border-radius:80px;
+      //height: 100px;
+      margin-top: 30px;     
+    }
+
+    #circle2
+    {
+      width:100px;
+    }
+
+    .img
+{
+width:100%;
+cursor:pointer;
+transition:1.0s;
+border-radius:80px;
+}
+
+.img:hover
+{
+transform:scale(1.04);
+border-radius:0%;
+//box-shadow:5px 5px 75px #643843;
+}
+    
+
+    #projects
+    {
+      width:98%;
+      //height: 300px;
+      margin-top:80px;
+      font-size:40px;
+      color:white;
+      //background: green;
+      margin:auto;
+    }
+
+    #projects2
+{
+width:100%;
+//background:blue;
+}
+
+#aa
+{
+width:95%;
+//height:1000px;
+//background:yellow;
+margin:auto;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+
+#cc
+{
+width:45%;
+//height:200px;
+//background:green;
+//margin:auto;
+font-size:13px;
+font-family:Corbel light;
+color:white;
+}
+
+.im
+{
+width:100%;
+cursor:pointer;
+transition:1.0s;
+
+}
+
+.im:hover
+{
+transform:scale(1.04);
+border-radius:0%;
+//box-shadow:5px 5px 75px #643843;
+}
+
+#updates
+    {
+      width:98%;
+      //height: 300px;
+      margin-top:30px;
+      font-size:40px;
+      color:white;
+      //background: green;
+      margin:auto;
+    }
+    #updates2
+{
+width:100%;
+//background:blue;
+}
+
+#bb
+{
+width:95%;
+//height:1000px;
+//background:yellow;
+//text-align:center;
+margin:auto;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+
+#cc
+{
+width:45%;
+//height:200px;
+//background:green;
+//margin:auto;
+font-size:13px;
+font-family:Corbel light;
+color:white;
+}
+
+#ca
+{
+width:98%;
+//height:200px;
+//background:green;
+//margin:auto;
+text-align:center;
+font-size:23px;
+//font-family:Corbel light;
+color:white;
+}
+
+#ab
+{
+width:45%;
+//height:200px;
+//background:green;
+margin:auto;
+text-align:center;
+font-size:11px;
+font-family:Corbel light;
+color:white;
+}
+
+#abc
+{
+width:60%;
+//height:200px;
+//background:green;
+margin:auto;
+text-align:center;
+font-size:11px;
+font-family:Corbel light;
+color:white;
+}
+
+#star
+{
+  width:100%;
+  position:fixed;
+  z-index:-3;
+}
+
+#rocket
+{
+  width:50%;
+  margin:auto;
+  background:white;
+
+}
+
+#om
+{
+width:45%;
+//height:200px;
+//background:green;
+//margin:auto;
+font-size:25px;
+//font-family:Corbel light;
+color:white;
+}
+
+#more
+{
+  width:100%;
+  margin:auto;
+
+}
+
+.imgs
+{
+width:100%;
+cursor:pointer;
+transition:1.0s;
+
+}
+
+#top
+{
+  width:98%;
+  //background: red;
+  margin:auto;
+  margin:auto;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+#logo
+{
+  width: 7%;  
+}
+
+#text
+{
+  width:auto;
+  background:white;
+  text-align:center;
+  color:black;
+  margin-top:20px;
+  font-size:28px;
+}
+
+#last2
+{
+  width:100%;
+  background:white;
+  margin-top:20px;
+}
+
+#last3
+{
+  width:80%;
+  margin:auto;
+  font-size:30px;
+  margin-top:30px;
+}
+    
+
+</style>
+
+<body bgColor="black">
+
+  <div id="star"><img src="imagesotm/star.jpg" width="100%"></div>
+
+  <div id="top">
+       </div>
+      <div id="text">ISRO's Grant In Aid Space Research Programmes</div>
+      <div id="logo"></div>     
+  </div>
+
+  <div id="video">
+    <video id="myvideo"  autoplay loop muted>
+
+      <source src="imagesotm/2.mp4" type="video/mp4" />
+      your browser does not support video
+      </video>
+  </div>
+
+  <div id="ca"><H2><u>
+    Milestones achieved so far
+  </U>
+</H2>
+  </div>
+
+  <div id="ca"><p>
+    Academic Interface is one of the most important activities of CBPO and it aims at encouraging joint collaborative research with academia/Labs/institutes and establishing the Knowledge/incubation/research etc., across the country. Recognising the need for a broader academic interface with institutions across the country, a series of capacity building initiatives have been taken up to further strengthen the involvement of academia for ISRO programmes. These initiatives include R&D Projects (RESPOND Basket); Space Technology Cells (STCs); Regional Academic Centres for Space (RAC-S); Space Technology Incubation Centres.<br/><br/>
+    Research proposals are supported by ISRO in the areas of Space Science, Space Technology and Space Applications which are of relevance to Space Programme. RESPOND Basket document published annually comprises of the most urgent and important research problems identified by ISRO/DOS Centre / Units on the basis of ISRO’s upcoming programmatic R&D requirements. And Research Area for Space Document published bi-annually with same moto. Each research problem comprises of a brief write-up about the topic for the faculty of the Academic Institutions/R&D laboratories to select and prepare the proposals. A Co-PI from ISRO/DOS  Centres has also been identified for each topic proposed in the Basket.
+  </p>
+  </div>
+
+  <div id="last2"><br/>
+    <div id="last3">
+     <b> About i-GRASP </b>
+    </div>
+    <div id="last3">
+      In March 2022, ISRO launched “I-GRASP” online portal (ISRO GRant in Aid for Space Research Programmes). The portal invites proposals from academia. The PIs from the academic institutions based on their area of interest and expertise select and submit the research proposals through this portal, where the entire process will be carried out through this portal which includes submission of proposals under RESPOND/STC/S-TIC/RACS and Other programmes are submitted online through I-GRASP portal only.
+      <br/><br/>An individual or group(s) of scientists/faculty members affiliated to any academic institution/autonomous R&D institutions may submit proposals. The Principal Investigator(s) should be full-time employee(s) of the concerned institution. The age limit for the Principal Investigator should be below 65 years (sixty-five years) including the project period. The Head of the academic institution must forward proposals with application for research grants. Proposals from individuals not affiliated to any recognized institution will not be considered. There may also be co-investigator(s) from the same/different institutions working on the project. But satisfactory completion of a project will be the responsibility of the Principal Investigator and her/his institution.
+
+    </div><br/><br/>
+  </div>
+  
+  
+</body>
+</html>
+
+
+

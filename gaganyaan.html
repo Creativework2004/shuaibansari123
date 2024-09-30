@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+
+body{margin:0%;}
+html{
+scroll-behavior:smooth;
+}
+
+a:link{color:rgb(255, 255, 255);text-decoration:none;}
+a:visited{color:rgb(0, 0, 0)}
+a:hover{text-decoration:underline none;color:rgb(82, 82, 82)}
+a:active{}
+
+  #video
+  {
+    width:100%;
+    //height:50px;
+    margin:auto;
+    
+   //background:blue;
+  }
+
+  #myvideo
+  {
+    width:100%;
+    margin:auto;
+    margin-top:10px;
+    //height:60px;
+  }
+
+    #bar
+    {
+      width:100%;
+      height:20px;
+      //background:#6482AD;
+      //background:black;
+      //margin-top:30px;
+      margin:auto;
+      display:flex;
+      flex-wrap:warp;
+      content:space-between;
+      //display:block;
+      //position:fixed;
+      //z-index:5;
+    }
+
+    #menu
+{
+width:99%;
+background:white;
+margin:auto;
+display:flex;
+flex-wrap:warp;
+justify-content:space-between;
+}
+
+#menu2
+{
+width:65%;
+margin:auto;
+font-size:20px;
+//height:80px;
+//background:yellow;
+//margin-left:380px;
+//margin-top:-80px;
+display:flex;
+flex-wrap:warp;
+justify-content:space-between;
+}
+
+    #about
+    {
+      width:98%;
+      //height: 300px;
+      margin-top:30px;
+      font-size:40px;
+      color:white;
+      //background: green;
+      margin:auto;
+    }
+
+    #about2
+    {
+      width:98%;
+      margin:auto;
+      color:white;
+      margin-top:20px;
+      font-size:23px;
+    }
+
+    #portals
+    {
+      width:98%;
+      //height: 300px;
+      margin-top:80px;
+      font-size:40px;
+      color:white;
+      //background: green;
+      margin:auto;
+    }
+
+
+    #portals2
+    {
+      width:98%;
+      //height: 300px;
+      margin-top:30px;
+      font-size:40px;
+      color:white;
+      //background: green;
+      margin:auto;
+      display:flex;
+      flex-wrap:warp;
+      justify-content:space-between;
+    }
+
+    #circle
+    {
+      width:7%;
+      //background:red;
+      border-radius:80px;
+      //height: 100px;
+      margin-top: 30px;     
+    }
+
+    #circle2
+    {
+      width:100px;
+    }
+
+    .img
+{
+width:100%;
+cursor:pointer;
+transition:1.0s;
+border-radius:80px;
+}
+
+.img:hover
+{
+transform:scale(1.04);
+border-radius:0%;
+//box-shadow:5px 5px 75px #643843;
+}
+    
+
+    #projects
+    {
+      width:98%;
+      //height: 300px;
+      margin-top:80px;
+      font-size:40px;
+      color:white;
+      //background: green;
+      margin:auto;
+    }
+
+    #projects2
+{
+width:100%;
+//background:blue;
+}
+
+#aa
+{
+width:95%;
+//height:1000px;
+//background:yellow;
+margin:auto;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+
+#cc
+{
+width:45%;
+//height:200px;
+//background:green;
+//margin:auto;
+font-size:13px;
+font-family:Corbel light;
+color:white;
+}
+
+.im
+{
+width:100%;
+cursor:pointer;
+transition:1.0s;
+
+}
+
+.im:hover
+{
+transform:scale(1.04);
+border-radius:0%;
+//box-shadow:5px 5px 75px #643843;
+}
+
+#updates
+    {
+      width:98%;
+      //height: 300px;
+      margin-top:30px;
+      font-size:40px;
+      color:white;
+      //background: green;
+      margin:auto;
+    }
+    #updates2
+{
+width:100%;
+//background:blue;
+}
+
+#bb
+{
+width:95%;
+//height:1000px;
+//background:yellow;
+//text-align:center;
+margin:auto;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+
+#cc
+{
+width:45%;
+//height:200px;
+//background:green;
+//margin:auto;
+font-size:13px;
+font-family:Corbel light;
+color:white;
+}
+
+#ca
+{
+width:98%;
+//height:200px;
+//background:green;
+//margin:auto;
+text-align:center;
+font-size:23px;
+//font-family:Corbel light;
+color:white;
+}
+
+#ab
+{
+width:45%;
+//height:200px;
+//background:green;
+margin:auto;
+text-align:center;
+font-size:11px;
+font-family:Corbel light;
+color:white;
+}
+
+#abc
+{
+width:60%;
+//height:200px;
+//background:green;
+margin:auto;
+text-align:center;
+font-size:11px;
+font-family:Corbel light;
+color:white;
+}
+
+#star
+{
+  width:100%;
+  position:fixed;
+  z-index:-3;
+}
+
+#rocket
+{
+  width:50%;
+  margin:auto;
+  background:white;
+
+}
+
+#om
+{
+width:45%;
+//height:200px;
+//background:green;
+//margin:auto;
+font-size:25px;
+//font-family:Corbel light;
+color:white;
+}
+
+#more
+{
+  width:100%;
+  margin:auto;
+
+}
+
+.imgs
+{
+width:100%;
+cursor:pointer;
+transition:1.0s;
+
+}
+
+#top
+{
+  width:98%;
+  //background: red;
+  margin:auto;
+  margin:auto;
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+}
+
+#logo
+{
+  width: 7%;  
+}
+
+#text
+{
+  width:auto;
+  //background:black;
+  text-align:center;
+  color:white;
+  margin-top:40px;
+  font-size:23px;
+}
+    
+
+</style>
+
+<body bgColor="black">
+
+  <div id="star"><img src="imagesotm/star.jpg" width="100%"></div>
+
+  <div id="top">
+      <div id="logo"><img src="imagesotm/space logo.png" width="100%"> </div>
+      <div id="text">MISSION GAGANYAAN</div>
+      <div id="logo"></div>     
+  </div>
+
+  <div id="bar">
+    <div id="menu">
+
+      <div id="menu2">
+      <div id="option"><a href="gaganyaan.html">Home</div></a>
+      <div id="option"><a href="#2">About</div></a>
+      <div id="option"><a href="#3">Portals</div></a>
+      <div id="option"><a href="#4">Updates</div></a>
+      <div id="option"><a href="#5">Projects</div></a> 
+      <div id="option"><a href="#6">More</div></a>
+      
+      </div>
+      
+      </div>
+
+  </div>
+  <div id="video">
+    <video id="myvideo"  autoplay loop muted>
+
+      <source src="imagesotm/gaganyaan.mp4" type="video/mp4" />
+      your browser does not support video
+      </video>
+  </div>
+
+  <a name="2">
+  <div id="about">
+    About
+  </div>
+<hr/>
+  <div id="about2">
+    <b>November 23, 2022</b></br></br>
+
+    The primary mandate of HSFC is to spearhead ISRO's Gaganyaan programme through co-ordinated efforts and focus all the activities that are carried out in other ISRO centres, research labs in India, Indian academia and Industries towards accomplishing the mission. HSFC, as the lead Centre for Human space flight activities conforms to high standards of reliability and human safety in undertaking R&D activities in new technology areas, such as life support systems, Human Factors Engineering, Bioastronautics, Crew training and Human rating & certification. These areas would constitute important components for future sustained human space flight activities like rendezvous and docking, space station building and interplanetary collaborative manned missions to Moon/Mars and near-earth asteroids.
+  </div>
+</br>
+
+<a name="3">
+  <div id="portals">
+    Portals
+  </div>
+  <hr/>
+
+  <div id="portals2">
+
+    <div id="circle">
+      
+      <a href="igrasp.html" >
+      <img class="img" src="imagesotm/i grasp.png" title="ISRO's Grant In Aid Space Research Programmes">
+    
+    </div>
+    
+    <div id="circle">
+
+      <a href="antriksh.html" >
+      <img class="img" src="imagesotm/stem.png" title="ISRO Science Technology Engineeringy & Mathematics Programme">
+    </div>
+
+    
+    <div id="circle">
+
+      <a href="spark.html">
+      <img class="img" src="imagesotm/spark.png" title="ISRO Virtual Space Museum">
+    </div>
+
+    
+    <div id="circle">
+      <a href="mosdac.html">
+      <img class="img" src="imagesotm/mosdac.png" title="Meteorological & Oceanographic Satellite Data Archival Centre">
+    </div>
+
+    
+    <div id="circle">
+      <a href="issdc.html">
+      <img class="img" src="imagesotm/issdc.png" title="Indian Space Science Data Center">
+    </div>
+
+    
+    <div id="circle">
+      <a href="bhoonidhi.html">
+      <img class="img" src="imagesotm/bhoonidhi.png" title="Earth Observation Data Hub">
+    </div>
+
+    <div id="circle">
+      <a href="bhuvan.html">
+      <img class="img" src="imagesotm/bhuvan.png" title="Indian Geo-Platform of ISRO">
+    </div>
+
+    
+    <div id="circle">
+      <a href="vedas.html">
+      <img class="img" src="imagesotm/vedas.png" title="Visualisation of Earth Observation Data and Archival System">
+    </div>
+
+    
+    <div id="circle">
+      <a href="ndem.html">
+      <img class="img" src="imagesotm/ndem.png" title="Nation Database for Emergency Management">
+    </div>
+
+
+  </div>
+<br/>
+
+
+
+  
+<a name="4">
+  <div id="updates">
+    Updates
+  </div><hr/><br/><br/>
+
+  <div id="projects2">
+
+    <div id="bb">
+
+      <div id="ab"><img class="im" src="imagesotm/u1.png"></div><br/>
+      <div id="ca"><p>
+        Gaganyaan from Sanskrit: gagana, "celestial" and yāna, "craft, vehicle" is an Indian crewed orbital spacecraft intended to be the formative spacecraft of the Indian Human Spaceflight Programme. The spacecraft is being designed to carry three people, and a planned upgraded version will be equipped with rendezvous and docking capabilities. In its maiden crewed mission, the Indian Space Research Organisation (ISRO)'s largely autonomous 5.3-metric ton capsule will orbit the Earth at 400 km altitude for up to seven days with a two- or three-person crew on board. The first crewed mission was originally planned to be launched on ISRO's HLVM3 rocket in December 2021. As of October 2023, it is expected to be launched by 2025. The Hindustan Aeronautics Limited (HAL)-manufactured crew module underwent its first uncrewed experimental flight on 18 December 2014.[9] As of May 2019, design of the crew module has been completed.[10] Defence Research and Development Organisation (DRDO) will provide support for critical human-centric systems and technologies such as space-grade food, crew healthcare, radiation measurement and protection, parachutes for the safe recovery of the crew module, and the fire suppression system. On 11 June 2020, it was announced that the first uncrewed Gaganyaan launch would be delayed due to the COVID-19 pandemic in India.[12] The overall timeline for crewed launches was expected to remain unaffected.[13] ISRO chairman S. Somanath announced in 2022 that the first crewed mission would not take place until 2024 at the earliest because of safety concerns.The Gaganyaan Mission will be led by V. R. Lalithambika, the former Director of the Directorate of the Human Spaceflight Programme with ISRO Chairman S Somnath and S. Unnikrishnan Nair, Director of Vikram Sarabhai Space Centre.[15][16] Imtiaz Ali Khan superseded V. R. Lalithambika as the Director of the Directorate of Human Spaceflight Programme.
+
+      </p>
+      </div>
+    </br></br></br></br>
+
+    <div id="ca"><H2><U>
+      Gaganyaan Astronauts | The Chosen Four
+    </U>
+  </H2>
+    </div>
+
+      </br><br/>
+      <di<div id="abc"><img class="im" src="imagesotm/u2.png"></div><br/>
+  </br><div id="ca"><p>
+        Group Captains Prasanth Balakrishnan Nair, Ajit Krishnan and Angad Pratap, and Wing Commander Shubanshu Shukla, all with the Indian Air Force, have been chosen as the astronaut-candidates for the first human spaceflight mission of the Indian Space Research Organisation.
+      </p>
+      </div>
+
+      <div id="ca"><p>
+        At a ceremony during an official visit to the Vikram Sarabhai Space Centre in Thiruvananthapuram, Kerala, on February 27, Prime Minister Narendra Modi revealed the names of the four astronaut-candidates for the first human spaceflight mission, a.k.a. Gaganyaan, of the Indian Space Research Organisation (ISRO). They are group captains Prasanth Balakrishnan Nair, Ajit Krishnan, and Angad Pratap, and wing commander Shubanshu Shukla — all with the Indian Air Force.
+      </p>
+      </div>
+
+      <div id="ca"><p>
+        The purpose of Gaganyaan is for ISRO to demonstrate human spaceflight to a low-earth orbit, with an Indian launch vehicle. Teams at the organisation are currently putting various components of the mission through their paces in the course of human-rating them — i.e. making sure their failure rates are below specific thresholds, rendering them safe enough for humans to fly to space with. Gaganyaan has two important uncrewed test flights coming up. If they are successful, the first crewed flight is (so far) slated for 2025.
+
+      </p>
+      </div>
+
+      <div id="ca"><H2><U>
+        Human rated LVM3 - HLVM3
+      </U>
+    </H2>
+      </div>
+
+      <div id="rocket"><img class="im" src="imagesotm/u3.png"></div><br/>
+      
+      <div id="ca"><p>
+        LVM3 rocket - The well proven and reliable heavy lift launcher of ISRO, is identified as the launch vehicle for Gaganyaan mission. It consists of solid stage, liquid stage and cryogenic stage. All systems in LVM3 launch vehicle are re-configured to meet human rating requirements and christened Human Rated LVM3. HLVM3 will be capable of launching the Orbital Module to an intended Low Earth Orbit of 400 km.
+
+      </p>
+      </div><br/>
+
+      <div id="ca"><p>
+        HLVM3 consists of Crew Escape System (CES) powered by a set of quick acting, high burn rate solid motors which ensures that Crew Module along with crew is taken to a safe distance in case of any emergency either at launch pad or during ascent phase.
+
+
+      </p>
+      </div>
+
+      <div id="ca"><H2><U>
+        Orbital Module
+      </U>
+    </H2>
+      </div>
+
+      <div id="aa">
+      <div id="cc"><img class="im" src="imagesotm/u1.png"></div><br/>
+      <div id="om"><p>
+        Orbital Module (OM) that will be Orbiting Earth comprises of Crew Module (CM) and Service Module (SM). OM is equipped with state-of-the-art avionics systems with adequate redundancy considering human safety.<br/><br/>CM is the habitable space with Earth like environment in space for the crew. It is of double walled construction consisting of pressurized metallic Inner Structure and unpressurised External Structure with Thermal Protection System (TPS). It houses the crew interfaces, human centric products, life support system, avionics and deceleration systems. It is also designed for re-entry to ensure safety of the crew during descent till touchdown.
+      </p>
+      </div>
+    </div>
+      <br/>
+
+      <div id="ca"><p>
+        SM will be used for providing necessary support to CM while in orbit. It is an unpressurized structure containing thermal system, propulsion system, power systems, avionics systems and deployment mechanisms.
+
+
+      </p>
+      </div>
+
+      <div id="ca"><H2><u>
+        New technologies being developed for Gaganyaan
+      </U>
+    </H2>
+      </div>
+
+      <div id="ca"><p></p>
+        Human safety is of paramount importance in Gaganyaan mission. In order to ensure the same, various new technologies comprising of Engineering systems and Human centric systems are being developed and realised.
+      </p>
+      </div>
+
+      <div id="ca"><H2><u>
+        Crew training for Gaganyaan
+      </U>
+    </H2>
+      </div>
+
+      <div id="abc"><img class="im" src="imagesotm/u4.png"></div><br/>
+      
+      <div id="ca"><p>
+        Astronaut Training Facility established in Bengaluru caters to Classroom training, Physical Fitness training, Simulator training and Flight suit training. Training modules cover academic courses, Gaganyaan Flight Systems, Micro-gravity familiarization through Parabolic Flights, Aero-medical training, Recovery & Survival training, mastering of Flight Procedures and training on Crew Training Simulators. Aero medical training, Periodical flying practice and Yoga are also included as part of the training.
+      </p>
+      </div>
+
+      <div id="ca"><H2><u>
+        Milestones achieved so far
+      </U>
+    </H2>
+      </div>
+
+      <div id="rocket"><img class="im" src="imagesotm/u5.png"></div><br/>
+
+      <div id="ca"><p>
+        Gaganyaan Drogue parachute tests First Crew Module for Test Vehicle Abort mission-1 Gaganyaan<br/><br/>Gaganyaan project envisages demonstration of human spaceflight capability by launching crew of 3 members to an orbit of 400 km for a 3 days mission and bring them back safely to earth, by landing in Indian sea waters.
+        <br/><br/>The project is accomplished through an optimal strategy by considering inhouse expertise, experience of Indian industry, intellectual capabilities of Indian academia & research institutions along with cutting edge technologies available with international agencies. The pre-requisites for Gaganyaan mission include development of many critical technologies including human rated launch vehicle for carrying crew safely to space, Life Support System to provide an earth like environment to crew in space, crew emergency escape provision and evolving crew management aspects for training, recovery and rehabilitation of crew.
+        <br/><br/>Various precursor missions are planned for demonstrating the Technology Preparedness Levels before carrying out the actual Human Space Flight mission. These demonstrator missions include Integrated Air Drop Test (IADT), Pad Abort Test (PAT) and Test Vehicle (TV) flights. Safety and reliability of all systems will be proven in unmanned missions preceding manned mission.
+      </p>
+      </div>
+
+      <div id="ca"><H2><u>
+        Test vehicle for characterisation of Crew Escape System ready at SDSC
+      </U>
+    </H2>
+      </div>
+
+      <div id="abc"><img class="im" src="imagesotm/u6.png"></div><br/>
+
+      <div id="ca"><p></p>
+        The test vehicle is a single-stage liquid rocket specially developed for abort missions. It carries the Crew Module (CM) and Crew Escape System (CES) equipped with fast-acting solid motors, along with the CM fairing (CMF) and Interface Adapters. The Crew Escape System, in particular, will be detached from the Test Vehicle at an altitude of approximately 17 km and undergo an autonomous abort sequence, ultimately leading to the safe landing of the CM in the sea, roughly 10 km off the Sriharikota coast.
+      </p>
+      </div>
+
+      
+
+      <a name="5">
+      <div id="projects">
+        Projects
+       </div>
+       <hr/>
+     <br/>
+
+      <div id="projects2">
+
+        <div id="aa">
+    
+          <div id="cc"><img class="im" src="imagesotm/g1.jpg"></div><br/>
+          <div id="cc"><h1>
+            <b>Chandrayaan 1</b><br><br> As India's first lunar probe. It was launched by the Indian Space Research Organisation on 22 October 2008, and was operated until August 2009. The mission included a lunar orbiter and an impactor. The mission was a major boost to India's space program, as India researched and developed its own technology in order to explore the Moon. The vehicle was successfully inserted into lunar orbit on 8 November 2008.
+          </h1>
+          </div><br/>
+          <div id="cc"><h1>
+            <b>Chandrayaan-2</b><br><br> Was launched from the second launch pad at Satish Dhawan Space Centre on 22 July 2019 at 2:43 PM IST (09:13 UTC) to the Moon by a LVM3 (previously known as GSLV Mk III). The planned or by bit has a perigee of 169.7 km and an apogee of 45475 km. It consists of a lunar orbiter, lander and rover, all developed in India. The main scientific objective is to map the location and abundance of lunar water.
+          </h1>
+          </div><br/>
+          <div id="cc"><img class="im" src="imagesotm/g2.jpg"></div><br/>
+          <div id="cc"><img class="im" src="imagesotm/g3.jpg"></div><br/>
+          <div id="cc"><h1>
+            
+            <b>Chandrayaan-3</b></br></br> was launched from the Satish Dhawan Space Centre, Sriharikota on 14 July 2023 at 14:35 IST by LVM3 M4. The main scientific objective is to demonstrate end-to-end capability in safe landing and roving on the lunar surface. The Chandrayaan-3 successfully landed on moon on 23 August 2023 at 18:05 IST . the Vikram Lander was conducted and the Propulsion Module (PM) of Chandrayaan-3 was moved from an orbit around Moon to an orbit around Earth, where it operated until 22 August 2024.</h1>
+          </div><br/>
+          <div id="cc"><h1>
+            <b>Aditya-L1</b></br></br> Is the first Indian observatory class mission to study the solar corona using a solar coronagraph and also chromosphere using near UV instrument. X-ray spectroscopic instruments will provide flare spectra while the in-situ payload observes the solar events during their passage from Sun to Earth.[8] On 6 January 2024, Aditya-L1 spacecraft, India's first solar mission, has successfully entered its final orbit around the first Sun-Earth Lagrangian point (L1), approximately 1.5 million kilometers from Earth.</h1>
+          </div><br/>
+          <div id="cc"><img class="im" src="imagesotm/g4.jpg"></div><br/>
+          <div id="cc"><img class="im" src="imagesotm/g5.jpg"></div><br/>
+          <div id="cc"><h1>
+            <b>Mars Orbiter Mission</b></br></br> Also called Mangalyaan, is a spacecraft orbiting Mars since 24 September 2014. It was launched on 5 November 2013 by the Indian Space Research Organization (ISRO). It is India's first interplanetary spaceflight mission and ISRO has become the fourth space agency to reach Mars, after the Soviet space program, NASA, and the European Space Agency. India is the first Asian nation to reach Mars orbit, and the first nation in the world to do so in its first attempt. </h1>
+          </div>
+          <div id="cc"><h1>
+            <b>ASTROSAT</b></br></br> Is the first dedicated Indian Astronomy satellite mission launched by ISRO on 28 September 2015, which enabled multi-wavelength observations of the celestial bodies and cosmic sources in X-ray and UV spectral bands simultaneously. It was in the Sun's orbit for 7 years. The scientific payloads cover the Visible , soft and hard X-ray regimes. The uniqueness of ASTROSAT lies in its wide spectral coverage extending over visible, UV, soft and hard X-ray regions. </h1>
+          </div>
+          <div id="cc"><img class="im" src="imagesotm/g6.jpg"></div><br/>
+          <div id="cc"><img class="im" src="imagesotm/g7.jpg"></div><br/>
+          <div id="cc"><h1>
+            <b>X-Ray Polarimeter Satellite</b></br></br> Is a ISRO space observatory to study polarization of cosmic X-rays. It was launched on 1 January 2024 on a Polar Satellite Launch Vehicle (PSLV-C58). XPoSat will study the 50 brightest known sources in the universe, including pulsars, black hole X-ray binaries, active galactic nuclei, and non-thermal supernova remnants. </h1>
+          </div>
+          <div id="cc"><h1>
+            <b>SPADEX</b></br></br> Or Space Docking Experiment is a twin spacecraft mission being developed by the ISRO to mature technologies related to orbital rendezvous, docking, formation flying, with scope of applications in human spaceflight, in-space satellite servicing and other proximity operations. </h1>
+          </div>
+          <div id="cc"><img class="im" src="imagesotm/g8.jpg"></div><br/>
+          <div id="cc"><img class="im" src="imagesotm/g9.jpg"></div><br/>
+          <div id="cc"><h1>
+            <b>Gaganyaan</b></br></br>  Is an Indian crewed orbital spacecraft (jointly made by ISRO and HAL) intended to be the basis of the Indian Human Spaceflight Programme. The spacecraft is being designed to carry three people, and a planned upgraded version will be equipped with rendezvous and docking capability. This will be the first of two flight tests prior to the inaugural of crewed mission. </h1>
+          </div>
+          <br/>
+          
+      </div><br/><br/><br/>
+
+      <a name="6">
+      <div id="More"><img class="imgs" src="imagesotm/last-01.png"></div><br/>
+  
+  
+</body>
+</html>
+
+
+
