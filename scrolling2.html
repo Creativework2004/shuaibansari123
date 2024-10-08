@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    *{
+        cursor: pointer;
+        transition: 1.50s ease-in-out;
+        box-sizing: border-box;
+    }
+
+    .pic
+    {
+        text-align:center;
+        transition: 1.50s;
+        width:50%;
+        box-shadow: 10px 10px 10px gray;
+        margin: 40px;
+        padding: 20px;
+    }
+
+    .zoomout
+    {
+        transform: scale(0.0);
+    }
+
+    .hidetext
+    {
+        background:white;
+        width: 100%;
+        padding: 20px;
+        margin: 10px;
+        text-align: justify;
+        font-size: 15px;
+        opacity: 0;
+    }
+
+    .showtext
+    {
+        opacity: 1;
+    }
+
+</style>
+
+
+<body style="text-align: center;">
+    <h1>using HTML tag by js</h1>
+
+    <img id="p1" src="imagejs/p1.jpg">
+    <img id="p2" src="imagejs/p2.jpg">
+    <img id="p3" src="imagejs/p3.jpg">
+    <img id="p4" src="imagejs/p4.jpg">
+    <img id="p5" src="imagejs/p5.jpg">
+
+    <p>
+        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section
+    </p>
+
+    <p>
+        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section
+    </p>
+
+    <script>
+
+        var myp = document.querySelectorAll("img")
+        var p = document.querySelectorAll("p")
+
+        for(var i = 0;i<myp.length ; i++)
+    {
+        myp[i].classList.add("pic")
+    }
+
+        for(var i = 0;i<p.length ;i++)
+    {
+        p[i].classList.add("hidetext")
+    }
+
+    document.body.onscroll = function()
+    {
+        document.title = pageYOffset
+
+        var sp = Math.round(pageYOffset)
+
+        if(sp>270)
+    {
+        myp[0].classList.add("zoomout")
+    }
+
+    if(sp>700)
+    {
+        myp[1].classList.add("zoomout")
+
+    }
+
+    if(sp>1200)
+    {
+        myp[2].classList.add("zoomout")
+    }
+
+    if(sp>1800)
+    {
+        myp[3].classList.add("zoomout")
+    }
+
+    if(sp>2700)
+    {
+        myp[4].classList.add("zoomout")
+    }
+
+    if(sp>3200)
+    {
+        myp[5].classList.add("zoomout")
+    }
+
+    if(sp>270)
+    {
+        myp[0].classList.remove("zoomout")
+    }
+
+    if(sp>700)
+    {
+        myp[1].classList.remove("zoomout")
+
+    }
+
+    if(sp>1200)
+    {
+        myp[2].classList.remove("zoomout")
+    }
+
+    if(sp>1800)
+    {
+        myp[3].classList.remove("zoomout")
+    }
+
+    if(sp>2700)
+    {
+        myp[4].classList.remove("zoomout")
+    }
+
+    if(sp>3200)
+    {
+        myp[5].classList.remove("zoomout")
+    }
+    }
+    </script>
+    
+
+</body>
+</html>
