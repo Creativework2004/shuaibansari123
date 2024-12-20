@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+a:link{color:#7f7f7f;text-decoration:none;}
+a:visited{color:#7f7f7f}
+a:hover{text-decoration:underline none;color:rgb(255, 255, 255)}
+a:active{}
+        #bar
+    {
+        width: 70vw;
+        height: 6.5vh;
+        bacground-color: rgb(0, 0, 0);
+        margin: auto;
+        border-radius: 10px;
+        display:flex;
+        flex-wrap:warp;
+        justify-content:space-between;
+    }
+
+    #bar2
+    {
+        width: 98.5%;
+        height: 5vh;
+        border-radius: 10px;
+        margin: auto;
+        bacground-color: rgb(255, 255, 255);
+        display:flex;
+        flex-wrap:warp;
+        justify-content:space-between;
+    }
+
+    #option
+    {
+        width: 8%;
+        height: 3vh;
+        bacground-color: blue;
+        margin: auto;
+        display:flex;
+        flex-wrap:warp;
+        justify-content:space-between;
+    }
+
+    #text
+    {
+        width: 85%;
+        height: 2vh;
+        bacground-color: aqua;
+        margin: auto;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        text-underline-position: below;
+    }
+
+    #option:hover
+    {
+        background-color:  rgb(0, 0, 0);
+        color: white;
+        border-radius: 35px;
+        cursor: pointer;
+    }
+
+    
+
+    #contect
+ {
+    width: 90vw;
+    height: 50vh;
+    bacground-color: blue;
+    box-shadow: 10px 30px 65px gray;
+    margin: auto;
+ }
+
+ .pic
+ {
+    width: 100%;
+ }
+
+ .pic2
+ {
+    width: 98%;
+ }
+
+    #learn
+    {
+        width: 50vw;
+        height: 1vh;
+        bacground-color: green;
+        margin: auto;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    } 
+
+    #invest
+    {
+        width: 50vw;
+        height: 4vh;
+        bacground-color: green;
+        margin: auto;
+        text-align: center;
+        font-size: 35px;
+    }
+
+    table
+      {
+        background:#ffffff;
+        width:50%;
+        margin:20px auto 20px auto;
+    }
+ input
+       {
+        height: 20px;
+        border: none;
+        background-color: rgb(214, 214, 214);
+         }
+
+
+caption
+{
+font-size:30px;
+font-family: Arial, Helvetica, sans-serif;
+background-color:black;
+color:white;
+margin-top:5px;
+margin-bottom:15px;
+}
+
+table{widht:100%;margin:auto;}
+input[type=text],[type=Age]{widht:100%;height:30px;border-radius:0px;color:rgb(0, 0, 0);font-size:15px;}
+input[type=submit],[type="reset"]
+
+
+
+    
+</style>
+<body>
+
+    <br/>
+
+    <div id="bar">
+
+<div id="bar2">
+
+    <div id="option"><div id="text"><a href="realstate.html">HOME</div></a></div>
+    <div id="option"><div id="text"><a href="buy.html">BUY</div></a></div>
+    <div id="option"><div id="text"><a href="sell.html">SELL</div></a></div>
+    <div id="option"><div id="text"><a href="rent.html">RENT</div></a></div>
+    <div id="option"><div id="text"><a href="invest.html">INVEST</div></a></div>
+    <div id="option"><div id="text"><a href="about.html">ABOUT US</div></a></div>
+    <div id="option"><div id="text"><a href="contect.html">CONTECT</div></a></div>
+
+</div>
+
+</div>
+    <br/><br/>
+
+    <div id="learn">
+        <p>LEARN MORE ABOUT THE</p>
+
+    </div>
+
+    <div id="invest">
+        <p>Investment <b>Process</b></p>
+    </div>
+    <br/>
+    <div id="learn">
+        <p>At Homerun Developments, we offer a comprehensive, hands-on approach to property investment. Check out the key steps we take to guide you through the entire investment process, ensuring a seamless and profitable experience from start to finish.</p>
+    </div>
+<br/><br/><br/><br/>
+
+<form>
+<table border="0" cellpadding="10">
+        <caption>Investment</caption>
+     
+<tr>
+<td><label>First Name</lable></td>
+<td><input type="text" placeholder="Type name" pattern="[a-z,A-Z]{1-15}" title="Name 1-15 char." required></td>
+</tr>
+
+<tr>
+<td><label>Last Name</lable></td>
+<td><input type="text" placeholder="Type name" pattern="[a-z,A-Z]{1-15}" title="Name 1-15 char." required></td>
+</tr>
+
+
+
+<tr>
+<td><lable>E-mail</lable></td>
+<td><input type="email" placeholder="type Email..."></td>
+</tr>
+
+
+
+
+
+<tr>
+<td><lable>Address</lable></td>
+<td>
+<textarea cols="30" rows="3">type address here  </textarea>
+</td>
+</tr>
+
+<tr>
+<td><label></lable></td>
+<td><input type="text" placeholder="pin code" pattern="{1-15}" title="Name 1-15 char." required></td>
+</tr>
+
+<tr>
+<td><label>Phone number</lable></td>
+<td><input type="text" placeholder="Type your number" pattern="{1-10}" title="Name 1-15 char." required></td>
+</tr>
+
+<tr>
+<td><lable>Avalible date</label></td>
+<td><input type="date" ></td>
+</tr>
+
+
+<tr>
+<td><lable>City</label></td>
+<td>
+<select>
+<option value="Delhi">Delhi</option>
+<option value="Bombay">Bombay</option>
+<option value="Calcutta">Calcutta</option>
+<option value="Cehenni">Cehenni</option>
+<option value="Goa">Goa</option>
+</select>
+</td>
+</tr>
+
+
+
+<tr>
+<td><lable>Description</lable></td>
+<td>
+<textarea cols="30" rows="5">type text here  </textarea>
+</td>
+</tr>
+
+
+
+<tr>
+<td><lable>Upload Image</label></td>
+<td><input type="file" ></td>
+</tr>
+
+
+<tr> 
+            <td><input type="Submit" ></td>
+            <td> <input type="reset"></td>
+        </tr>
+
+</form>
+</table>
+<br/><br/>
+
+<div id="contect">
+                <img class="pic" src="images/contect-01.jpg">
+            </div>
+
+ 
+    
+</body>
+
+</html>

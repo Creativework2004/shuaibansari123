@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="style.css">
+    <title>COFOUNDER CITY</title>
+</head>
+
+<style>
+    a:link{color:#7f7f7f;text-decoration:none;}
+a:visited{color:#7f7f7f}
+a:hover{text-decoration:underline none;color:rgb(255, 255, 255)}
+a:active{}
+    #bar
+    {
+        width: 70vw;
+        height: 6.5vh;
+        bacground-color: rgb(0, 0, 0);
+        margin: auto;
+        border-radius: 10px;
+        display:flex;
+        flex-wrap:warp;
+        justify-content:space-between;
+    }
+
+    #bar2
+    {
+        width: 98.5%;
+        height: 5vh;
+        border-radius: 10px;
+        margin: auto;
+        bacground-color: rgb(255, 255, 255);
+        display:flex;
+        flex-wrap:warp;
+        justify-content:space-between;
+    }
+
+    #option
+    {
+        width: 8%;
+        height: 3vh;
+        bacground-color: blue;
+        margin: auto;
+        display:flex;
+        flex-wrap:warp;
+        justify-content:space-between;
+    }
+
+    #text
+    {
+        width: 85%;
+        height: 2vh;
+        bacground-color: aqua;
+        margin: auto;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        text-underline-position: below;
+    }
+
+    #option:hover
+    {
+        background-color:  rgb(0, 0, 0);
+        color: white;
+        border-radius: 35px;
+        cursor: pointer;
+    }
+
+    #banner
+    {
+        width: 99vw;
+        height: 110vh;
+        background-color: green;
+        margin: auto;
+
+    }
+
+    #more
+    {
+        width: 99vw;
+        height: 50vh;
+        bacground-color: blue;
+        margin: auto;
+        text-align: center;
+        font-size: 123%;
+    }
+
+    #more2
+    {
+        width: 99vw;
+        height: 80vh;
+        bacground-color: blue;
+        margin: auto;
+        text-align: center;
+        font-size: 150%;
+    }
+
+    #company
+    {
+        width: 76vw;
+        height: 20vh;
+        bacground-color: red;
+        margin: auto;
+        display:flex;
+        flex-wrap:warp;
+        justify-content:space-between;
+    }
+
+    #company3
+    {
+        width: 76vw;
+        height: 10vh;
+        bacground-color: red;
+        margin: auto;
+        display:flex;
+        flex-wrap:warp;
+        justify-content:space-between;
+    }
+
+    #icon
+    {
+        width: 10vw;
+        height: 20vh;
+        bacground-color: cyan;
+        margin: auto;
+    }
+
+    #icon2
+    {
+        width: 10vw;
+        height: 5vh;
+        bacground-color: cyan;
+        text-align: center;
+        margin: auto;
+        color: black;
+    }
+
+    #pic
+    {
+        width: 100vw;
+        margin: auto;
+    }
+
+    #company2
+    {
+        width: 99vw;
+        height: 30vh;
+        margin-top: 30%;
+        text-align: center;
+        bacground-color: rgb(0, 157, 255);
+        margin: auto;
+    }
+
+    #info
+    {
+        width: 79vw;
+        height: 10vh;
+        bacground-color: blue;
+        margin: auto;
+        text-align: center;
+    }
+
+    #team
+    {
+        width: 89vw;
+        height: 60vh;
+        bacground-color: blue;
+        margin: auto;
+        
+    }
+
+    #name
+    {
+        width: 50vw;
+        height: 10vh;
+        bacground-color: aqua;
+        margin: auto;
+        text-align: center;
+        font-size: 280%;
+        color: black;
+    }
+
+    .pic3
+    {
+        width: 70%;
+        text-align: center;
+        margin: auto;
+    }
+
+    #slider
+    {
+        width: 89vw;
+        height: 60vh;
+        bacground-color: brown;
+        margin: auto;
+    }
+
+    .main{
+  position: relative;
+  width: 1400px;
+  background: rgb(243, 243, 243);
+  padding: 20px;
+  border-radius: 10px;
+  margin: auto;
+ }
+
+ .left,.right{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 10px;
+  opacity: 0.8;
+ }
+
+
+
+ .left{
+  top:45%;
+  left: 40px;
+  transform: rotate(180deg);
+ }
+
+ .right{
+  right: 40px;
+  bottom: 35%;
+  top: 45%;
+  
+  
+ }
+
+ .item-div{
+  overflow-x: auto;
+  display: flex;
+ }
+
+ .item{
+  min-width: 250px;
+  max-width: 200px;
+  margin-left: 15px;
+  height: 370px;
+  border-radius: 20px;
+  background: gray;
+
+ }
+
+ .item:first-child{
+  margin-left: 0;
+ }
+ .item-div::-webkit-scrollbar{
+  height: 0;
+  width: 0;
+ }
+
+
+ .img2{
+  margin-top: -120px;
+  width: 80%;
+  height:100%;
+  
+ }
+
+ .last{
+  width:100%;
+  height: 500px;
+  background: mediumpurple;
+ }
+
+ #related
+ {
+    width: 89vw;
+    height: 6vh;
+    bacground-color: brown;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 200%;
+    color: black;
+ }
+
+ #contect
+ {
+    width: 90vw;
+    height: 50vh;
+    background-color: blue;
+    box-shadow: 10px 16px 35px gray;
+    margin: auto;
+ }
+
+ .pic
+    {
+        width: 100%;
+
+    }    
+    
+</style>
+
+<body >
+    <br/>
+
+    <div id="bar">
+
+        <div id="bar2">
+
+            <div id="option"><div id="text"><a href="realstate.html">HOME</div></a></div>
+            <div id="option"><div id="text"><a href="buy.html">BUY</div></a></div>
+            <div id="option"><div id="text"><a href="sell.html">SELL</div></a></div>
+            <div id="option"><div id="text"><a href="rent.html">RENT</div></a></div>
+            <div id="option"><div id="text"><a href="invest.html">INVEST</div></a></div>
+            <div id="option"><div id="text"><a href="about.html">ABOUT US</div></a></div>
+            <div id="option"><div id="text"><a href="contect.html">CONTECT</div></a></div>
+
+        </div>
+
+    </div>
+<br/>
+    <div id="banner">
+
+        <img class="pic" src="images/banner.jpg">
+
+    </div>
+    <br/><br/><br/><br/><br/>
+
+    <div id="more">
+
+        <p style="font-family: Arial, Helvetica, sans-serif;">Location is key</p>
+<p style="font-size: 150%;">Discover <b>Marbella’s Top Areas</b> for <br/>Luxury Living </p>
+<p style="font-family: Arial, Helvetica, sans-serif;">Marbella is renowned for its <b>luxury real estate</b>, offering a diverse range of prestigious neighborhoods to suit every lifestyle.<br/> Whether you’re seeking a luxury villa in <b>Nueva Andalucía’s  Golf Valley</b>, a beachfront home along the <b> Golden Mile</b>, or the <br/> ultimate in privacy at <b>La Zagaleta</b>  and <b>El Madroñal</b>, Marbella has it all. Areas like <b>Sierra Blanca</b> offer stunning mountain views <br/> and <b>high-end properties</b>, perfect for those seeking tranquility and exclusivity.</p>
+
+<p style="font-family: Arial, Helvetica, sans-serif;">Explore these <b>prime Marbella locations</b> for more information on finding your dream property.</p>
+
+    </div>
+    
+    
+        <video id="more2" autoplay loop >
+
+            <source src="images/1.mp4" type="video/mp4" />
+            your browser does not support video
+            </video>
+            </div><br/><br/><br/><br/><br/><br/>
+
+
+<div id="company">
+
+    <div id="icon">
+        <img class="pic" src="images/1-01.png">
+    </div>
+    <div id="icon">
+        <img class="pic" src="images/2-01.png">
+    </div>
+    <div id="icon">
+        <img class="pic" src="images/3-01.png">
+    </div>
+    <div id="icon">
+        <img class="pic" src="images/4-01.png">
+    </div>
+
+</div>
+
+<div id="company3">
+
+    <div id="icon2"><b>560+</b> <br/>Total Area Sq</div>
+    <div id="icon2"><b>340+</b> <br/>Apartio Rooms</div>
+    <div id="icon2"><b>268+</b> <br/>Total Constructions</div>
+    <div id="icon2"><b>197K+</b> <br/>Apartments Sold</div>
+
+</div>
+
+            
+
+            <div class="container">
+                <div class="card__container">
+                   <article class="card__article">
+                      <img src="assets/img/h1.jpg" alt="image" class="card__img">
+       
+                      <div class="card__data">
+                         <span class="card__description">Vancouver Mountains, Canada</span>
+                         <h2 class="card__title">The Great Path</h2>
+                         <a href="#" class="card__button">Read More</a>
+                      </div>
+                   </article>
+       
+                   <article class="card__article">
+                      <img src="assets/img/h2.jpg" alt="image" class="card__img">
+       
+                      <div class="card__data">
+                         <span class="card__description">Poon Hill, Nepal</span>
+                         <h2 class="card__title">Starry Night</h2>
+                         <a href="#" class="card__button">Read More</a>
+                      </div>
+                   </article>
+       
+                   <article class="card__article">
+                      <img src="assets/img/h3.jpg" alt="image" class="card__img">
+       
+                      <div class="card__data">
+                         <span class="card__description">Bojcin Forest, Serbia</span>
+                         <h2 class="card__title">Path Of Peace</h2>
+                         <a href="#" class="card__button">Read More</a>
+                      </div>
+                   </article>
+                </div>
+             </div>
+
+             <div id="info">
+
+                <p>Real estate refers to property consisting of land and the buildings on it, along with natural resources like minerals or water. It encompasses various types, including residential, commercial, industrial, and land. Real estate involves activities like buying, selling, leasing, and investing in properties. Real estate professionals, such as agents and brokers, assist with transactions, while financing often involves mortgages. The market fluctuates based on supply, demand, and economic conditions, making it a key area for both personal and investment opportunities.</p>
+                
+             </div><br/>
+
+             <div id="name">TEAM MEAMBERS</div><br/>
+             <div id="team">
+
+                <img class="pic3" src="images/team.jpg">
+
+             </div><br/><br/><br/><br/>
+
+             <div id="slider">
+
+                <img src="images/b1.jpg" width="100%">
+
+             </div>
+             <br/><br/><br/>
+
+             <div id="related">
+                <b>RELATED</b> PROPERTIES
+             </div>
+
+             <br/>
+
+
+             <div class="main">
+                <div class="item-div" id="box">
+                    <div class="item"><img src="images/e1.jpg"></div>
+                    <div class="item"><img src="images/e2.jpg"></div>
+                    <div class="item"><img src="images/e3.jpg"></div>
+                    <div class="item"><img src="images/e4.jpg"></div>
+                    <div class="item"><img src="images/e5.jpg"></div>
+                    <div class="item"><img src="images/e6.jpg"></div>
+                    <div class="item"><img src="images/e7.jpg"></div>
+                    <div class="item"><img src="images/e8.jpg"></div>
+                    <div class="item"><img src="images/e9.jpg"></div>
+                    <div class="item"><img src="images/e10.jpg"></div>
+        
+                </div>
+                <img src="images/right2.png" class="left" id="left">
+                <img src="images/right2.png" class="right" id="right">
+            </div>
+            <br/>
+
+            <div id="contect">
+                <img src="images/contect-01.jpg">
+            </div>
+        
+            <script>
+                var button = document.getElementById('right');
+                button.onclick = function(){
+                    var container = document.getElementById('box');
+                    sideScroll(container, 'right' , 25,100,10);
+        
+                };
+        
+                var back = document.getElementById('left');
+                back.onclick = function(){
+                    var container = document.getElementById('box');
+                    sideScroll(container,'left',25,100,10);
+                };
+        
+                function sideScroll(element,direction,speed,distance,step){
+                    scrollAmount = 0;
+                    var slideTimer = setInterval(function(){
+                        if(direction == 'left'){
+                            element.scrollLeft -= step;
+        
+                        }
+                        else{
+                            element.scrollLeft += step;
+                        }
+                        scrollAmount += step;
+                        if(scrollAmount >= distance){
+                            window.clearInterval(slideTimer);
+                        }
+                    }, speed);
+                }
+            </script>
+
+            
+            
+    
+    
+</body>
+</html>
