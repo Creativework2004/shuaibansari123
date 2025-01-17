@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunrover-index</title>
+</head>
+<style>
+
+a:link{color:#ffffff;text-decoration:none;}
+a:visited{color:#ffffff}
+a:hover{text-decoration:underline none;color:rgb(0, 0, 0)}
+a:active{}
+
+#bar
+{
+    width:97vw;
+    height: 13vh;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    text-align: center;
+    display:flex;
+        flex-wrap:warp;
+        justify-content:space-between;
+}
+
+#bar3
+{
+    width: 6vw;
+    height: 4vh;
+    background-color: #2f4157;
+    cursor: pointer;
+    margin: auto;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+}
+
+#bar3:hover
+{
+    background-color: white;
+}
+
+#bar4
+{
+    width: 6vw;
+    height: 2vh;
+    margin: auto;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#bar2
+{
+    width: 50vw;
+    height: 8vh;
+    background-color: #587394;
+    margin: auto;
+    border-radius: 60px;
+    color: white;
+    text-align: center;
+    display:flex;
+        flex-wrap:warp;
+        justify-content:space-between;
+}
+
+#logo
+{
+    width: 15vw;
+    height: 10vh;
+    margin: auto;
+    bacground-color: brown;
+}
+
+#top
+{
+    width: 97vw;
+    height: 130vh;
+    margin: auto;
+}
+
+.pic
+{
+    width: 100%;
+    margin: auto;
+}
+
+#second
+{
+    width: 97vw;
+    height: 5vh;
+    margin: auto;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#our
+{
+    width: 35vw;
+    height: 20vh;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+#option
+{
+    width: 80vw;
+    height: 20vw;
+    margin: auto;
+    bacground-color: blueviolet;
+    border-radius: 20px;
+    display:flex;
+        flex-wrap:warp;
+        justify-content:space-between;
+
+}
+
+#option2
+{
+    width: 22vw;
+    height: 26vh;
+    bacground-color: aqua;
+    border-radius: 20px;
+    margin: auto;
+    
+}
+
+#option2:hover
+{
+    cursor: pointer;
+    margin-top: 01px;
+    //box-shadow: 1px 12px 10px rgb(255, 255, 255);
+}
+
+#about
+{
+    width: 97vw;
+    height:     100vh;
+    bacground-color: red;
+    margin: auto;
+    display:flex;
+        flex-wrap:warp;
+        justify-content:space-between;
+}
+
+#about2
+{
+    width: 50vw;
+    height: 116vh;
+    bacground-color: cyan;
+    margin: auto;
+    display: flex;
+}
+
+#about3
+{
+    width: 50vw;
+    height: 116vh;
+    bacground-color: rgb(0, 255, 30);
+    margin: auto;
+}
+
+#inside
+{
+    width:45vw ;
+    height: 100vh;
+    background-color: white;
+    margin: auto;
+    
+}
+
+
+#small
+{
+    width: 35vw;
+    height: 7vh;
+    margin: auto;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    
+    color: #2f4157 ;
+}
+
+#big
+{
+    width: 35vw;
+    height: 30vh;
+    margin: auto;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    
+    font-size: 58px;
+    color: #2f4157 ;
+}
+
+#more
+{
+    width: 35vw;
+    height: 30vh;
+    margin: auto;
+    bacground-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    color: #2f4157 ;
+}
+
+#more2
+{
+    width: 35vw;
+    height: 5vh;
+    margin: auto;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    
+    font-size: 20px;
+    cursor: pointer;
+    color: #2f4157 ;
+}
+
+
+#next
+{
+    width: 97vw;
+    height:     100vh;
+    bacground-color: rgb(103, 35, 35);
+    margin: auto;
+    display:flex;
+        flex-wrap:warp;
+        justify-content:space-between;
+}
+
+#next2
+{
+    width: 50vw;
+    height: 100vh;
+    bacground-color: cyan;
+    margin: auto;
+}
+
+#next3
+{
+    width: 50vw;
+    height: 116vh;
+    bacground-color: rgb(0, 51, 255);
+    margin: auto;
+    display: flex;
+}
+
+#text
+{
+    width: 43vw;
+    height: 95vh;
+    background-color: white;
+    margin: auto;
+    
+}
+
+#text2
+{
+    width: 40vw;
+    height: 20vh;
+    font-family: Arial, Helvetica, sans-serif;
+    bacground-color: blueviolet;
+    margin: auto;
+    font-size: 47px;
+    color: #2f4157;
+    
+}
+
+#text3
+{
+    width: 40vw;
+    height: 23vh;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    color: #2f4157;
+    
+    font-size: 18px;
+    
+}
+
+#text4
+{
+    width: 40vw;
+    height: 7vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2f4157;
+    margin: auto;
+    
+    font-size: 30px;
+}
+
+#text5
+{
+    width: 40vw;
+    height: 1vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2f4157;
+    margin: auto;
+    font-size: 15px;
+}
+
+#text6
+{
+    width: 40vw;
+    height: 7vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2f4157;
+    margin: auto;
+    font-size: 30px;
+}
+
+#text7
+{
+    width: 40vw;
+    height: 40vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2f4157;
+    margin: auto;
+    font-size: 15px;
+}
+
+.pic2
+{
+    width: 95%;
+    margin: auto;
+}
+
+#contect
+{
+    width: 95vw;
+    height: 100vh;
+    bacground-color: aqua;
+    margin: auto;
+    display:flex;
+        flex-wrap:warp;
+        justify-content:space-between;
+}
+
+#contect2
+{
+    width: 48vw;
+    height: 99vh;
+    margin: auto;
+    bacground-color: rgb(236, 166, 80);
+    display:flex;
+}
+
+#massage
+{
+    width: 44vw;
+    height: 80vh;
+    background-color: white;
+    margin: auto;
+    border-radius: 50px;
+    
+    
+}
+
+#massage2
+{
+    width: 35vw;
+    height: 10vh;
+    bacground-color: blue;
+    margin: auto;
+    display: flex;
+    
+}
+
+#contect3
+{
+    width: 48vw;
+    height: 99vh;
+    margin: auto;
+    bacground-color: rgb(236, 80, 202);
+    display: flex;
+}
+
+#ma
+{
+    width: 45vw;
+    height: 70vh;
+    margin: auto;
+    bacground-color: black;
+}
+
+#ma2
+{
+    width: 44vw;
+    height: 5vh;
+    margin: auto;
+    background-color: #2f4157;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#ma3
+{
+    width: 44vw;
+    height: 17vh;
+    margin: auto;
+    background-color: #2f4157;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 55px;
+}
+
+#ma4
+{
+    width: 44vw;
+    height: 15vh;
+    margin: auto;
+    background-color: #2f4157;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#ma5
+{
+    width: 44vw;
+    height: 5vh;
+    margin: auto;
+    background-color: #2f4157;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#image
+{
+    width: 97vw;
+    height: 60vh;
+    bacground-color: aqua;
+    margin: auto;
+    display:flex;
+        flex-wrap:warp;
+        justify-content:space-between;
+}
+
+#heading
+{
+    width: 60vw;
+    height: 20vh;
+    margin: auto;
+    color: white;
+    bacground-color: blueviolet;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+#image2
+{
+    width: 20vw;
+    height: 59vh;
+    bacground-color: blue;
+    margin: auto;
+    border-radius: 20px;
+    transition:1.0s
+}
+
+#image2:hover
+{
+    transform:scale(1.04);
+}
+
+.pic3
+{
+    width: 95%;
+    margin: auto;
+    border-radius: 20px;
+}
+
+#rev
+{
+    width: 93vw;
+    height: 50vh;
+    bacground-color: aquamarine;
+    margin: auto;
+}
+
+#last
+{
+    width: 97vw;
+    height: 78vh;
+    bacground-color: blueviolet;
+    margin: auto;
+}
+</style>
+
+<body bgColor="#2f4157">
+
+    <div id="bar">
+
+        <div id="logo">
+            <img class="pic" src="imagesotm/solar logo-01.png">
+        </div>
+
+        <div id="bar2">
+
+        <div id="bar3">
+            <div id="bar4"><a href="solar.html"> Home </a></div></div>
+        <div id="bar3">
+            <div id="bar4"><a href="about.html">About Us</a></div></div>
+        <div id="bar3">
+            <div id="bar4"><a href="services.html">Services</a></div></div>
+        <div id="bar3">
+            <div id="bar4"><a href="project.html">Projects</a></div></div>
+        <div id="bar3">
+            <div id="bar4"><a href="contect.html">Contect</a></div></div>
+
+    </div>
+</div>
+
+<div id="top">
+    <img class="pic" src=imagesotm/so1.jpg>
+</div>
+<br><br><br><br><br><br><br><br><br>
+<div id="second">
+    Our Services
+</div>
+
+<div id="our">
+    Unlock the potential of the sun with solar energy!
+</div>
+
+<div id="option">
+
+    <div id="option2"><img class="pic2" src="imagesotm/solar-01.png"></div>
+    <div id="option2"><img class="pic2" src="imagesotm/solar-02.png"></div>
+    <div id="option2"><img class="pic2" src="imagesotm/solar-03.png"></div>
+</div>
+
+<div id="option">
+
+    <div id="option2"><img class="pic2" src="imagesotm/solar-04.png"></div>
+    <div id="option2"><img class="pic2" src="imagesotm/solar-05.png"></div>
+    <div id="option2"><img class="pic2" src="imagesotm/solar-06.png"></div>
+</div><br><br><br><br><br><br>
+
+<div id="about">
+
+    <div id="about2">
+        <div id="inside">
+            <br><br><br><br>
+            <div id="small">ABOUT US</div>
+            <div id="big">Embrace The Power The Sun With Solar Energy!</div>
+            <div id="more">Solar energy is a clean and sustainable form of power derived from sunlight. It is harnessed using technologies like photovoltaic (PV) cells, which convert sunlight directly into electricity, and solar thermal systems, which use the sun's heat for water heating or electricity generation. This renewable energy source is widely praised for its environmental benefits, as it significantly reduces greenhouse gas emissions and dependence on fossil fuels. Advances in solar technology have made it increasingly affordable and efficient, leading to its adoption in various applications, from residential rooftops to large-scale solar farms.</div>
+            <div id="more2">Read More &#8594;</div>
+        </div>
+    </div>
+    <div id="about3"><img class="pic" src="imagesotm/so2-01.jpg"></div>
+</div>
+<br><br><br><br><br><br><br><br><br>
+
+<div id="next">
+    <div id="next2"><img class="pic" src="imagesotm/so3-01.png"></div>
+    <div id="next3">
+        <div id="text">
+            <br>
+            <div id="text2">
+                Sun-Powered Solutions for a Sustainable Future
+            </div>
+            <div id="text3">
+                Sun-Powered Solutions for a Sustainable Future" refers to the growing trend of harnessing solar energy to meet our energy needs in an environmentally responsible and sustainable manner. Solar energy offers a transformative opportunity to shift away from fossil fuels, reduce greenhouse gas emissions, and support sustainable development. As the world faces the challenges of climate change, rising energy demands, and resource depletion, sun-powered solutions are key to building a sustainable future.
+            </div>
+            <div id="text4">
+                &#129082; Sunshine Energy
+            </div>
+            <div id="text5">
+                "Sunshine Energy" refers to the energy harnessed directly from the sun's rays, commonly known as solar energy. The term "sunshine energy" often evokes the idea of a clean, natural, and renewable source of power that can be used to meet our energy needs sustainably. Sunshine energy is one of the most abundant and accessible sources of energy on Earth, and as technology advances, it is becoming increasingly viable as a major contributor to global energy consumption.
+            </div><br><br><br><br><br><br><br>
+
+            <div id="text6">
+                &#129082; Solar Repair
+            </div>
+            <div id="text7">
+                Solar repair refers to the process of diagnosing, fixing, and maintaining solar power systems, particularly solar panels and their associated components. Over time, solar energy systems can encounter issues due to wear and tear, environmental conditions, or technical malfunctions. Solar repair ensures that these systems continue to operate efficiently, safely, and at their optimal performance levels.
+            </div>
+        </div>
+    </div>
+</div><br><br><br><br><br><br>
+
+<div id="contect">
+
+    <div id="contect2">
+        <div id="massage">
+            <br><br><br><br>
+
+            <div id="massage2">
+            <input style="height: 5vh; width: 15vw; margin: auto; border-radius: 20px;" type="name" placeholder="Name">
+
+            <input style="height: 5vh; width: 15vw; margin: auto; border-radius: 20px;" type="name" placeholder="Email Addreass">
+        </div>
+
+            <div id="massage2">
+            <input style="height: 5vh; width: 32.5vw; margin: auto; border-radius: 20px;" type="name" placeholder="Your Phone Number"></div>
+
+        
+
+            <div id="massage2">
+                <textarea style="margin: auto; width: 32.5vw; height: 25vh; border-radius: 20px;"  cols="30" rows="5">  Massage  </textarea>
+
+            </div><br><br><br><br><br><br><br>
+
+            <div id="massage2">
+                <input style="width: 32.5vw; height: 7vh; margin: auto; border-radius: 30px; cursor: pointer; background-color: #2f4157; color: white;" type="submit">
+            </div>
+        </div>
+    </div>
+    <div id="contect3">
+        
+        <div id="ma">
+            <br>
+            <div id="ma2">CONTECT US</div><br>
+            <div id="ma3">Empowering Communities with Solar Energy</div><br>
+            <div id="ma4">Empowering communities with solar energy involves leveraging clean and renewable energy solutions to address local challenges and foster sustainable development. Solar energy, abundant and eco-friendly, serves as a tool to provide electricity, reduce carbon emissions, and promote energy independence, especially in under-resourced and remote areas.</div>
+            <div id="ma5">&#9743; +91 9319654221</div>
+            <div id="ma5">&#9993; www.sunrover.com</div>
+            <div id="ma5">&#x1F4CD; Arena Animation, Dilshad Gardern</div>
+        </div>
+    </div>
+</div><br><br><br><br>
+
+    <div id="heading">
+        Embrace The Power The Sun With Solar Energy!
+    </div>
+
+    <br><br>
+
+    <div id="image">
+        <div id="image2">
+            <img class="pic3" src="imagesotm/img1.jpg">
+        </div>
+        <div id="image2">
+            <img class="pic3" src="imagesotm/img2.jpg">
+        </div>
+        <div id="image2"><img class="pic3" src="imagesotm/img3.jpg"></div>
+        <div id="image2"><img class="pic3" src="imagesotm/img4.jpg"></div>
+    </div><br><br>
+
+<div id="rev">
+    <img class="pic" src="imagesotm/re-01.png">
+</div>
+
+<div id="last">
+    <img class="pic" src="imagesotm/footer-01-01.jpg">
+</div>
+    
+</body>
+</html>
