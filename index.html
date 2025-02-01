@@ -203,6 +203,7 @@ border-radius:0%;
     border: 1px solid;
     border-radius: 8px;
     cursor: pointer;
+    display: flex
 }
 
 #work2:hover
@@ -286,6 +287,215 @@ height: 50px;
     backround: blue;
     margin: auto;
 }
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) 
+
+{
+    body{
+        bacground-color: green;
+    }
+
+    #bar
+    {
+      width:100%;
+      height: 50px;
+      //background:#000000;
+      bacground:black;
+      //margin-top:30px;
+      margin:auto;
+      display:flex;
+      flex-wrap:warp;
+      content:space-between;
+      //display:block;
+      position:fixed;
+    z-index:5;
+    }
+
+    #logo
+    {
+        width:7%;
+        background:white;
+        height: 50px;
+    }
+
+    #menu
+{
+width:65%;
+bacground:white;
+margin:auto;
+display:flex;
+flex-wrap:warp;
+justify-content:space-between;
+}
+
+#menu2 
+{
+width:90%;
+margin:auto;
+font-size:10px;
+text-align: center;
+//height:80px;
+bacground:yellow;
+//margin-left:380px;
+//margin-top:-80px;
+display:flex;
+flex-wrap:warp;
+justify-content:space-between;
+}
+
+#resume
+{
+    width:10%;
+    bacground:white;
+    text-align: center;
+    height: 50px;
+    font-size: 10px;
+    margin:auto;
+      display:flex;
+      flex-wrap:warp;
+      content:space-between;
+}
+
+.resume:hover
+{
+    background: white;
+    transition:0.40s;
+}
+
+#menu3
+{
+width:100%;
+background:rgba(246, 151, 56, 0.843);
+background:#000000;
+margin:auto;
+font-size: 10px;
+text-align:center;
+color: white;
+display:flex;
+flex-wrap:warp;
+justify-content:space-between;
+border-radius: 20px;
+}
+
+#work2
+{
+    width: 20%;
+    height: 30px;
+    background:#F8C164;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: 1px solid;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+}
+
+#work2:hover
+{
+    background: black;
+    color: white;
+    transition:0.40s;
+}
+
+#text
+{
+    width: auto;
+    
+    font-size: 11px;
+    text-align: center;
+    
+}
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+{
+    body{
+        background-color: green;
+    }
+
+    #bar
+    {
+      width:100%;
+      height: 50px;
+      //background:#000000;
+      background:black;
+      //margin-top:30px;
+      margin:auto;
+      display:flex;
+      flex-wrap:warp;
+      content:space-between;
+      //display:block;
+      position:fixed;
+    z-index:5;
+    }
+
+    #logo
+    {
+        width:7%;
+        background:white;
+        height: 50px;
+    }
+
+    #menu
+{
+width:65%;
+//background:white;
+margin:auto;
+display:flex;
+flex-wrap:warp;
+justify-content:space-between;
+}
+
+#menu2 
+{
+width:90%;
+margin:auto;
+font-size:10px;
+text-align: center;
+//height:80px;
+background:yellow;
+//margin-left:380px;
+//margin-top:-80px;
+display:flex;
+flex-wrap:warp;
+justify-content:space-between;
+}
+
+#resume
+{
+    width:10%;
+    //background:white;
+    text-align: center;
+    height: 50px;
+    margin:auto;
+      display:flex;
+      flex-wrap:warp;
+      content:space-between;
+}
+
+.resume:hover
+{
+    background: white;
+    transition:0.40s;
+}
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
     
 
 </style>
@@ -358,6 +568,12 @@ height: 50px;
         <div id="work2">
             <div id="text">
                 <a href="work4.html">JQUERY
+        </div></a>
+        </div>
+
+        <div id="work2">
+            <div id="text">
+                <a href="work5.html">BOOTSTRAP
         </div></a>
         </div>
 
