@@ -1,101 +1,954 @@
-<!doctype html>
-<html>
-<head> <title>Home</title>
+Here's a comprehensive, futuristic landing page for Digital India (2047 vision) with modern UI elements, animations, and a cohesive design. The page showcases India's technological advancements in 2047 with interactive elements:
 
-<style>
-
-#top
-{
-widht:100%;
-height:1000px;
-background:blue;
-}
-
-#top2
-{
-widht:100%;
-height:50px;
-background:black;
-
-
-}
-
-#logo
-{
-width:5%;
-height:50px;
-background:red;
-}
-
-#top3
-{
-widht:100%;
-height:230px;
-background:red;
-margin-top:90px;
-
-}
-
-#top4
-{
-widht:100%;
-height:300px;
-background:red;
-margin-top:90px;
-}
-
-
-#about
-{
-width:40%;
-height:80px;
-margin-top:20px;
-background:black;
-}
-
-
-
-
-</style>
-
+```html
+`digital-india-2047.html`
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital India 2047 - Reimagining the Future</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4f46e5;
+            --secondary: #10b981;
+            --accent: #f59e0b;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+            background-color: #f8fafc;
+            color: #1e293b;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #f8fafc 100%);
+        }
+        
+        .nav-glass {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+        }
+        
+        .stat-card {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        
+        .future-tech-card {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .future-tech-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(
+                to bottom right,
+                rgba(79, 70, 229, 0.1) 0%,
+                rgba(79, 70, 229, 0) 60%
+            );
+            transform: rotate(30deg);
+            transition: all 0.5s ease;
+        }
+        
+        .future-tech-card:hover::before {
+            transform: rotate(45deg);
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .delay-1 {
+            animation-delay: 0.5s;
+        }
+        
+        .delay-2 {
+            animation-delay: 1s;
+        }
+    </style>
+</head>
 <body>
+    <!-- Navigation -->
+    <nav class="nav-glass fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <img src="https://placehold.co/120x40?text=Digital+2047" alt="Digital India 2047 logo featuring a futuristic lotus with circuit pattern" class="h-10">
+                    </div>
+                    <div class="hidden md:block">
+                        <div class="ml-10 flex items-baseline space-x-4">
+                            <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-indigo-600 bg-indigo-50">Home</a>
+                            <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-indigo-600 hover:bg-indigo-50">Vision</a>
+                            <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-indigo-600 hover:bg-indigo-50">Initiatives</a>
+                            <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-indigo-600 hover:bg-indigo-50">Achievements</a>
+                            <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-indigo-600 hover:bg-indigo-50">Contact</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-4 flex items-center md:ml-6">
+                        <button class="p-1 rounded-full text-gray-600 hover:text-indigo-600 focus:outline-none">
+                            <span class="sr-only">View notifications</span>
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-indigo-600 hover:bg-indigo-50 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-<div id="top">
-<div id="top2">
+    <!-- Hero Section -->
+    <div class="gradient-bg pt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center pt-12 md:pt-24">
+                <div class="space-y-6">
+                    <div class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-indigo-100 text-indigo-700">
+                        Digital India 2047
+                    </div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900">
+                        Reimagining <span class="text-indigo-600">India's</span> Digital Future
+                    </h1>
+                    <p class="text-lg text-gray-600">
+                        By 2047, India has transformed into a global technology superpower. Our digital infrastructure, innovation ecosystem, and citizen services set new benchmarks for the world.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700">
+                            Explore Vision
+                        </a>
+                        <a href="#" class="inline-flex items-center justify-center px-6 py-3 border border-gray-300 text-base font-medium rounded-md shadow-sm text-gray-800 bg-white hover:bg-gray-50">
+                            Key Initiatives
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="relative w-full aspect-[4/3] bg-white rounded-2xl shadow-xl overflow-hidden">
+                        <img src="https://placehold.co/800x600" alt="Futuristic smart city in India with flying cars, holographic displays, and sustainable architecture under a clear blue sky" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-indigo-500 rounded-xl shadow-lg overflow-hidden z-10 floating">
+                        <img src="https://placehold.co/128x128" alt="Holographic display showing India's digital growth metrics with interactive charts and infographics" class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute -top-6 -left-6 w-24 h-24 bg-emerald-500 rounded-full shadow-lg overflow-hidden z-10 floating delay-1">
+                        <img src="https://placehold.co/96x96" alt="AI-powered healthcare robot assisting senior citizens in a smart city environment" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<div id="logo">
+    <!-- Statistics Section -->
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="absolute inset-0 bg-gradient-to-r from-indigo-600 to-indigo-900 opacity-10 rounded-3xl -rotate-1 -z-10"></div>
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-gray-900">India's Digital Milestones (2047)</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+                The remarkable progress we've achieved through strategic initiatives and technological innovation
+            </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="stat-card bg-white p-6 rounded-2xl">
+                <div class="flex items-center">
+                    <div class="p-3 rounded-lg bg-indigo-50 text-indigo-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                        </svg>
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-sm font-medium text-gray-600">Digital Economy</p>
+                        <p class="text-2xl font-bold text-gray-900">$15 Trillion</p>
+                    </div>
+                </div>
+            </div>
+            <div class="stat-card bg-white p-6 rounded-2xl">
+                <div class="flex items-center">
+                    <div class="p-3 rounded-lg bg-green-50 text-green-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                        </svg>
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-sm font-medium text-gray-600">Digital Citizens</p>
+                        <p class="text-2xl font-bold text-gray-900">1.8 Billion</p>
+                    </div>
+                </div>
+            </div>
+            <div class="stat-card bg-white p-6 rounded-2xl">
+                <div class="flex items-center">
+                    <div class="p-3 rounded-lg bg-amber-50 text-amber-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-sm font-medium text-gray-600">5G+ Coverage</p>
+                        <p class="text-2xl font-bold text-gray-900">100% Nationwide</p>
+                    </div>
+                </div>
+            </div>
+            <div class="stat-card bg-white p-6 rounded-2xl">
+                <div class="flex items-center">
+                    <div class="p-3 rounded-lg bg-purple-50 text-purple-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-sm font-medium text-gray-600">AI Integration</p>
+                        <p class="text-2xl font-bold text-gray-900">92% Services</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-</div>
+    <!-- Future Technologies Section -->
+    <div class="bg-indigo-900 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white">Technologies Powering India 2047</h2>
+                <p class="mt-4 text-lg text-indigo-200 max-w-3xl mx-auto">
+                    A glimpse into the cutting-edge technologies that have transformed India into a global innovation hub
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="future-tech-card bg-white p-6 rounded-2xl">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m12.728 0l-.707.707M12 18.364V19m0 1v1m-6.364-1.636l-.707.707M3 12h1m5.657-3.343l-.707-.707m4.95 1.06A9 9 0 1112 3a9 9 0 015.657 15.657z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Quantum Computing Network</h3>
+                    <p class="text-gray-600">
+                        India's nationwide quantum network enables unhackable communication and solves complex problems in seconds that would take conventional computers millennia.
+                    </p>
+                </div>
+                <div class="future-tech-card bg-white p-6 rounded-2xl">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">AI-Driven Governance</h3>
+                    <p class="text-gray-600">
+                        Our AI systems handle 92% of government services and decision-making, reducing processing times from weeks to minutes with zero human intervention.
+                    </p>
+                </div>
+                <div class="future-tech-card bg-white p-6 rounded-2xl">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Holographic Interfaces</h3>
+                    <p class="text-gray-600">
+                        Every Indian has access to personal holographic displays, transforming how we learn, work, and interact with digital services.
+                    </p>
+                </div>
+                <div class="future-tech-card bg-white p-6 rounded-2xl">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Neural Education</h3>
+                    <p class="text-gray-600">
+                        Direct neural stimulation enables accelerated learning - mastering new skills in days instead of years through optimized neuroplasticity techniques.
+                    </p>
+                </div>
+                <div class="future-tech-card bg-white p-6 rounded-2xl">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Blockchain Economy</h3>
+                    <p class="text-gray-600">
+                        India's digital rupee powers a fully transparent economy with smart contracts automating 80% of financial transactions and legal agreements.
+                    </p>
+                </div>
+                <div class="future-tech-card bg-white p-6 rounded-2xl">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Brain-Computer UI</h3>
+                    <p class="text-gray-600">
+                        Thought-controlled interfaces enable seamless interaction with digital systems, eliminating language barriers for India's diverse population.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- Smart Cities Showcase -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-gray-900">India's Smart Cities of 2047</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+                How urban centers have transformed into self-sustaining, hyper-efficient digital ecosystems
+            </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="relative rounded-2xl overflow-hidden shadow-xl h-96">
+                <img src="https://placehold.co/800x1000" alt="Aerial view of smart city with vertical gardens, drone taxis, and solar panel covered buildings" class="w-full h-full object-cover">
+                <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+                    <h3 class="text-xl font-bold text-white">Delhi-NCR Megacity</h3>
+                    <p class="text-indigo-200">World's first carbon-neutral megacity</p>
+                </div>
+            </div>
+            <div class="relative rounded-2xl overflow-hidden shadow-xl h-96">
+                <img src="https://placehold.co/800x1000" alt"Underwater eco-city with transparent domes, marine life observation decks, and sustainable ocean farming infrastructure" class="w-full h-full object-cover">
+                <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+                    <h3 class="text-xl font-bold text-white">Mumbai Oceanopolis</h3>
+                    <p class="text-indigo-200">Floating and underwater city districts</p>
+                </div>
+            </div>
+            <div class="relative rounded-2xl overflow-hidden shadow-xl h-96">
+                <img src="https://placehold.co/800x1000" alt="Sustainable high-tech village with agri-drones, solar-powered smart farms, and renewable energy microgrids" class="w-full h-full object-cover">
+                <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+                    <h3 class="text-xl font-bold text-white">Hyderabad Tech Valley</h3>
+                    <p class="text-indigo-200">Global hub for quantum computing</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-</div>
+    <!-- Digital Services Section -->
+    <div class="bg-gray-50 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900">Citizen Services Reimagined</h2>
+                <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+                How government services have transformed with digital-first approach
+                </p>
+            </div>
+            <div class="relative">
+                <div class="absolute inset-0 flex items-center" aria-hidden="true">
+                    <div class="w-full border-t border-gray-300"></div>
+                </div>
+                <div class="relative flex justify-center">
+                    <span class="px-3 bg-gray-50 text-lg font-medium text-gray-900">
+                        Experience the Future
+                    </span>
+                </div>
+            </div>
+            <div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
+                <div class="overflow-hidden bg-white rounded-lg shadow">
+                    <div class="p-5">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <svg class="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <div class="ml-5 w-0 flex-1">
+                                <dl>
+                                    <dt class="text-sm font-medium text-gray-500 truncate">
+                                        Digital Identity
+                                    </dt>
+                                    <dd>
+                                        <div class="text-lg font-medium text-gray-900">
+                                            Aadhaar 3.0
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 px-5 py-3">
+                        <div class="text-sm">
+                            <a href="#" class="font-medium text-indigo-700 hover:text-indigo-900">
+                                Experience now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="overflow-hidden bg-white rounded-lg shadow">
+                    <div class="p-5">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <svg class="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                                </svg>
+                            </div>
+                            <div class="ml-5 w-0 flex-1">
+                                <dl>
+                                    <dt class="text-sm font-medium text-gray-500 truncate">
+                                        Health Records
+                                    </dt>
+                                    <dd>
+                                        <div class="text-lg font-medium text-gray-900">
+                                            National Health Stack
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 px-5 py-3">
+                        <div class="text-sm">
+                            <a href="#" class="font-medium text-indigo-700 hover:text-indigo-900">
+                                Explore services
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="overflow-hidden bg-white rounded-lg shadow">
+                    <div class="p-5">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <svg class="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+                                </svg>
+                            </div>
+                            <div class="ml-5 w-0 flex-1">
+                                <dl>
+                                    <dt class="text-sm font-medium text-gray-500 truncate">
+                                        Digital Rupee
+                                    </dt>
+                                    <dd>
+                                        <div class="text-lg font-medium text-gray-900">
+                                            CBDC Platform
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 px-5 py-3">
+                        <div class="text-sm">
+                            <a href="#" class="font-medium text-indigo-700 hover:text-indigo-900">
+                                Get started
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<div id="top3">
-<h3 style=color:white;margin-top:10px;>
-Hello My name is
-</h3>
-<h2 style=color:white;margin-top:-15px; margin-left:30px;>
-SHUAIB ANSARI,
-<br/>
-I'am a Graphic designer & Wed
-<br/>
-developer.
-</h2>
+    <!-- Call to Action -->
+    <div class="bg-indigo-700">
+        <div class="max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
+                <span class="block">Ready to explore India's digital future?</span>
+                <span class="block">Join us in shaping tomorrow.</span>
+            </h2>
+            <p class="mt-4 text-lg leading-6 text-indigo-200">
+                Be part of the most ambitious digital transformation in human history
+            </p>
+            <a href="#" class="mt-8 w-full inline-flex items-center
+```
 
-</div>
+🎨 **Generating images based on descriptions...**
 
-<div id="top4"></div>
+✅ **Images generated successfully! Here's your updated content:**
 
-<div id="about"></div>
+`digital-india-2047.html`
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital India 2047 - Reimagining the Future</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4f46e5;
+            --secondary: #10b981;
+            --accent: #f59e0b;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+            background-color: #f8fafc;
+            color: #1e293b;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #f8fafc 100%);
+        }
+        
+        .nav-glass {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+        }
+        
+        .stat-card {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        
+        .future-tech-card {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .future-tech-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(
+                to bottom right,
+                rgba(79, 70, 229, 0.1) 0%,
+                rgba(79, 70, 229, 0) 60%
+            );
+            transform: rotate(30deg);
+            transition: all 0.5s ease;
+        }
+        
+        .future-tech-card:hover::before {
+            transform: rotate(45deg);
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .delay-1 {
+            animation-delay: 0.5s;
+        }
+        
+        .delay-2 {
+            animation-delay: 1s;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-glass fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9d97fae7-128f-426d-a9d0-86d9c910f86a.png" alt="Digital India 2047 logo featuring a futuristic lotus with circuit pattern" class="h-10">
+                    </div>
+                    <div class="hidden md:block">
+                        <div class="ml-10 flex items-baseline space-x-4">
+                            <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-indigo-600 bg-indigo-50">Home</a>
+                            <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-indigo-600 hover:bg-indigo-50">Vision</a>
+                            <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-indigo-600 hover:bg-indigo-50">Initiatives</a>
+                            <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-indigo-600 hover:bg-indigo-50">Achievements</a>
+                            <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-indigo-600 hover:bg-indigo-50">Contact</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-4 flex items-center md:ml-6">
+                        <button class="p-1 rounded-full text-gray-600 hover:text-indigo-600 focus:outline-none">
+                            <span class="sr-only">View notifications</span>
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-indigo-600 hover:bg-indigo-50 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
 
+    <!-- Hero Section -->
+    <div class="gradient-bg pt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center pt-12 md:pt-24">
+                <div class="space-y-6">
+                    <div class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-indigo-100 text-indigo-700">
+                        Digital India 2047
+                    </div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900">
+                        Reimagining <span class="text-indigo-600">India's</span> Digital Future
+                    </h1>
+                    <p class="text-lg text-gray-600">
+                        By 2047, India has transformed into a global technology superpower. Our digital infrastructure, innovation ecosystem, and citizen services set new benchmarks for the world.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700">
+                            Explore Vision
+                        </a>
+                        <a href="#" class="inline-flex items-center justify-center px-6 py-3 border border-gray-300 text-base font-medium rounded-md shadow-sm text-gray-800 bg-white hover:bg-gray-50">
+                            Key Initiatives
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="relative w-full aspect-[4/3] bg-white rounded-2xl shadow-xl overflow-hidden">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7a70efee-13e7-4041-9ee8-d88bf9510739.png" alt="Futuristic smart city in India with flying cars, holographic displays, and sustainable architecture under a clear blue sky" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-indigo-500 rounded-xl shadow-lg overflow-hidden z-10 floating">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/78ab0abe-0b80-4d26-aa8a-6f4133c7ba9d.png" alt="Holographic display showing India's digital growth metrics with interactive charts and infographics" class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute -top-6 -left-6 w-24 h-24 bg-emerald-500 rounded-full shadow-lg overflow-hidden z-10 floating delay-1">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8abb6136-e009-4625-8f67-4a5dec5de386.png" alt="AI-powered healthcare robot assisting senior citizens in a smart city environment" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-</div>
+    <!-- Statistics Section -->
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="absolute inset-0 bg-gradient-to-r from-indigo-600 to-indigo-900 opacity-10 rounded-3xl -rotate-1 -z-10"></div>
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-gray-900">India's Digital Milestones (2047)</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+                The remarkable progress we've achieved through strategic initiatives and technological innovation
+            </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="stat-card bg-white p-6 rounded-2xl">
+                <div class="flex items-center">
+                    <div class="p-3 rounded-lg bg-indigo-50 text-indigo-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                        </svg>
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-sm font-medium text-gray-600">Digital Economy</p>
+                        <p class="text-2xl font-bold text-gray-900">$15 Trillion</p>
+                    </div>
+                </div>
+            </div>
+            <div class="stat-card bg-white p-6 rounded-2xl">
+                <div class="flex items-center">
+                    <div class="p-3 rounded-lg bg-green-50 text-green-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                        </svg>
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-sm font-medium text-gray-600">Digital Citizens</p>
+                        <p class="text-2xl font-bold text-gray-900">1.8 Billion</p>
+                    </div>
+                </div>
+            </div>
+            <div class="stat-card bg-white p-6 rounded-2xl">
+                <div class="flex items-center">
+                    <div class="p-3 rounded-lg bg-amber-50 text-amber-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-sm font-medium text-gray-600">5G+ Coverage</p>
+                        <p class="text-2xl font-bold text-gray-900">100% Nationwide</p>
+                    </div>
+                </div>
+            </div>
+            <div class="stat-card bg-white p-6 rounded-2xl">
+                <div class="flex items-center">
+                    <div class="p-3 rounded-lg bg-purple-50 text-purple-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-sm font-medium text-gray-600">AI Integration</p>
+                        <p class="text-2xl font-bold text-gray-900">92% Services</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- Future Technologies Section -->
+    <div class="bg-indigo-900 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white">Technologies Powering India 2047</h2>
+                <p class="mt-4 text-lg text-indigo-200 max-w-3xl mx-auto">
+                    A glimpse into the cutting-edge technologies that have transformed India into a global innovation hub
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="future-tech-card bg-white p-6 rounded-2xl">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m12.728 0l-.707.707M12 18.364V19m0 1v1m-6.364-1.636l-.707.707M3 12h1m5.657-3.343l-.707-.707m4.95 1.06A9 9 0 1112 3a9 9 0 015.657 15.657z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Quantum Computing Network</h3>
+                    <p class="text-gray-600">
+                        India's nationwide quantum network enables unhackable communication and solves complex problems in seconds that would take conventional computers millennia.
+                    </p>
+                </div>
+                <div class="future-tech-card bg-white p-6 rounded-2xl">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">AI-Driven Governance</h3>
+                    <p class="text-gray-600">
+                        Our AI systems handle 92% of government services and decision-making, reducing processing times from weeks to minutes with zero human intervention.
+                    </p>
+                </div>
+                <div class="future-tech-card bg-white p-6 rounded-2xl">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Holographic Interfaces</h3>
+                    <p class="text-gray-600">
+                        Every Indian has access to personal holographic displays, transforming how we learn, work, and interact with digital services.
+                    </p>
+                </div>
+                <div class="future-tech-card bg-white p-6 rounded-2xl">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Neural Education</h3>
+                    <p class="text-gray-600">
+                        Direct neural stimulation enables accelerated learning - mastering new skills in days instead of years through optimized neuroplasticity techniques.
+                    </p>
+                </div>
+                <div class="future-tech-card bg-white p-6 rounded-2xl">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Blockchain Economy</h3>
+                    <p class="text-gray-600">
+                        India's digital rupee powers a fully transparent economy with smart contracts automating 80% of financial transactions and legal agreements.
+                    </p>
+                </div>
+                <div class="future-tech-card bg-white p-6 rounded-2xl">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Brain-Computer UI</h3>
+                    <p class="text-gray-600">
+                        Thought-controlled interfaces enable seamless interaction with digital systems, eliminating language barriers for India's diverse population.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- Smart Cities Showcase -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-gray-900">India's Smart Cities of 2047</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+                How urban centers have transformed into self-sustaining, hyper-efficient digital ecosystems
+            </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="relative rounded-2xl overflow-hidden shadow-xl h-96">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/52463627-8ee6-4ba9-953e-54e1518f8d62.png" alt="Aerial view of smart city with vertical gardens, drone taxis, and solar panel covered buildings" class="w-full h-full object-cover">
+                <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+                    <h3 class="text-xl font-bold text-white">Delhi-NCR Megacity</h3>
+                    <p class="text-indigo-200">World's first carbon-neutral megacity</p>
+                </div>
+            </div>
+            <div class="relative rounded-2xl overflow-hidden shadow-xl h-96">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/86697034-77ff-4daa-b369-86c309189e1c.png" alt"Underwater eco-city with transparent domes, marine life observation decks, and sustainable ocean farming infrastructure" class="w-full h-full object-cover">
+                <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+                    <h3 class="text-xl font-bold text-white">Mumbai Oceanopolis</h3>
+                    <p class="text-indigo-200">Floating and underwater city districts</p>
+                </div>
+            </div>
+            <div class="relative rounded-2xl overflow-hidden shadow-xl h-96">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/62d722c5-1b2e-40cf-b239-8922c20777f5.png" alt="Sustainable high-tech village with agri-drones, solar-powered smart farms, and renewable energy microgrids" class="w-full h-full object-cover">
+                <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+                    <h3 class="text-xl font-bold text-white">Hyderabad Tech Valley</h3>
+                    <p class="text-indigo-200">Global hub for quantum computing</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- Digital Services Section -->
+    <div class="bg-gray-50 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900">Citizen Services Reimagined</h2>
+                <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+                How government services have transformed with digital-first approach
+                </p>
+            </div>
+            <div class="relative">
+                <div class="absolute inset-0 flex items-center" aria-hidden="true">
+                    <div class="w-full border-t border-gray-300"></div>
+                </div>
+                <div class="relative flex justify-center">
+                    <span class="px-3 bg-gray-50 text-lg font-medium text-gray-900">
+                        Experience the Future
+                    </span>
+                </div>
+            </div>
+            <div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
+                <div class="overflow-hidden bg-white rounded-lg shadow">
+                    <div class="p-5">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <svg class="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <div class="ml-5 w-0 flex-1">
+                                <dl>
+                                    <dt class="text-sm font-medium text-gray-500 truncate">
+                                        Digital Identity
+                                    </dt>
+                                    <dd>
+                                        <div class="text-lg font-medium text-gray-900">
+                                            Aadhaar 3.0
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 px-5 py-3">
+                        <div class="text-sm">
+                            <a href="#" class="font-medium text-indigo-700 hover:text-indigo-900">
+                                Experience now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="overflow-hidden bg-white rounded-lg shadow">
+                    <div class="p-5">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <svg class="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                                </svg>
+                            </div>
+                            <div class="ml-5 w-0 flex-1">
+                                <dl>
+                                    <dt class="text-sm font-medium text-gray-500 truncate">
+                                        Health Records
+                                    </dt>
+                                    <dd>
+                                        <div class="text-lg font-medium text-gray-900">
+                                            National Health Stack
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 px-5 py-3">
+                        <div class="text-sm">
+                            <a href="#" class="font-medium text-indigo-700 hover:text-indigo-900">
+                                Explore services
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="overflow-hidden bg-white rounded-lg shadow">
+                    <div class="p-5">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <svg class="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+                                </svg>
+                            </div>
+                            <div class="ml-5 w-0 flex-1">
+                                <dl>
+                                    <dt class="text-sm font-medium text-gray-500 truncate">
+                                        Digital Rupee
+                                    </dt>
+                                    <dd>
+                                        <div class="text-lg font-medium text-gray-900">
+                                            CBDC Platform
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 px-5 py-3">
+                        <div class="text-sm">
+                            <a href="#" class="font-medium text-indigo-700 hover:text-indigo-900">
+                                Get started
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-
-
-</body>
-
-</html>
+    <!-- Call to Action -->
+    <div class="bg-indigo-700">
+        <div class="max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
+                <span class="block">Ready to explore India's digital future?</span>
+                <span class="block">Join us in shaping tomorrow.</span>
+            </h2>
+            <p class="mt-4 text-lg leading-6 text-indigo-200">
+                Be part of the most ambitious digital transformation in human history
+            </p>
+            <a href="#" class="mt-8 w-full inline-flex items-center
+```

@@ -3,684 +3,330 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Portfolio</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
-
-<style>
-    
-    body{margin:0%;}
-html{
-scroll-behavior:smooth;
-}
-
-a:link{color:rgb(0, 0, 0);text-decoration:none;}
-a:visited{color:rgb(0, 0, 0)}
-a:hover{text-decoration:underline none;color:rgb(255, 255, 255)}
-a:active{}
-
-
-    
-        #bar
-    {
-      width:100%;
-      height: 50px;
-      //background:#000000;
-      //background:black;
-      //margin-top:30px;
-      margin:auto;
-      display:flex;
-      flex-wrap:warp;
-      content:space-between;
-      //display:block;
-      position:fixed;
-    z-index:5;
-    }
-
-    #logo
-    {
-        width:7%;
-        background:white;
-        height: 50px;
-    }
-
-    #menu
-{
-width:65%;
-//background:white;
-margin:auto;
-display:flex;
-flex-wrap:warp;
-justify-content:space-between;
-}
-
-#menu2 
-{
-width:90%;
-margin:auto;
-font-size:20px;
-text-align: center;
-//height:80px;
-//background:yellow;
-//margin-left:380px;
-//margin-top:-80px;
-display:flex;
-flex-wrap:warp;
-justify-content:space-between;
-}
-
-#resume
-{
-    width:10%;
-    //background:white;
-    text-align: center;
-    height: 50px;
-    margin:auto;
-      display:flex;
-      flex-wrap:warp;
-      content:space-between;
-}
-
-.resume:hover
-{
-    background: white;
-    transition:0.40s;
-}
-
-#menu3
-{
-width:95%;
-background:rgba(246, 151, 56, 0.843);
-background:#000000;
-margin:auto;
-text-align:center;
-color: white;
-display:flex;
-flex-wrap:warp;
-justify-content:space-between;
-border-radius: 20px;
-}
-
-
-
-
-#menu4 
-{
-width:90%;
-margin:auto;
-font-size:20px;
-text-align:center;
-color: white;
-//height:80px;
-//background:yellow;
-//margin-left:380px;
-//margin-top:-80px;
-
-}
-
-.menu4:hover
-{
-    background: white;
-    transition:0.40s;
-}
-
-.pic
-{
-    width:100%;
-
-}
-
-#top
-{
-    width:100%;
-    //height: 300px;
-    margin:auto;
-    //background:cyan;
-    text-align: center;
-    font-size:30px;
-    font-family: Ananda Personal Use;
-}
-
-#hello
-{
-    width:100%;
-    hight: 80px;
-    //margin: auto;
-    text-align: center;
-    //background:yellow;
-    font-size:30px;
-    //margin-top: 30px;
-}
-
-
-
-
-#pages2
-{
-    width:100%;
-    heiht: 30px;
-    backround: black;
-    text-align: center;
-    margin: auto;
-}
-
-.pic2
-{
-    width:100%;
-    transition:1.0s;
-}
-
-.pic2:hover
-{
-transform:scale(1.07);
-border-radius:0%;
-//box-shadow:5px 5px 75px #643843;
-}
-
-#work
-{
-    width: 100%;
-    hight: 300px;
-    backround: black;
-    text-align: center;
-    justify-content: center;
-    align-content: center;
-    margin: auto;
-    display:flex;
-      flex-wrap:warp;
-      content:space-between;
-    
-}
-
-#work2
-{
-    width: 20%;
-    height: 30px;
-    background:#F8C164;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    border: 1px solid;
-    border-radius: 8px;
-    cursor: pointer;
-    display: flex
-}
-
-#work2:hover
-{
-    background: black;
-    color: white;
-    transition:0.40s;
-}
-
-#text
-{
-    width: auto;
-    margin-top: 5px;
-}
-
-#projects
-{
-    width:100%;
-    heiht: 30px;
-    background: black;
-    text-align: center;
-    margin: auto;
-}
-
-#projects2
-{
-width:100%;
-height: 50px;
-    backround: blue;
-    margin: auto;
-    display:flex;
-      flex-wrap:warp;
-      content:space-between;
-      justify-content:space-between;
-}
-
-#work3
-{
-    width: 18%;
-    height: 30px;
-    background:#ffffff;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    border: 1px solid;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-#work3:hover
-{
-    background: #FBD378;
-    color: rgb(0, 0, 0);
-    transition:0.40s;
-}
-
-#text2
-{
-    width:90%;
-    background: white;
-    margin: auto;
-    border-radius: 10px;
-    font-size: 20px;
-}
-
-#contect
-{
-    width: 100%;
-    margin: auto;
-    display:flex;
-      flex-wrap:warp;
-      content:space-between;
-      justify-content:space-between;
-}
-
-#contect2
-{
-    width: 10%;
-    heiht: 100px;
-    backround: blue;
-    margin: auto;
-}
-
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) 
-
-{
-    body{
-        bacground-color: green;
-    }
-
-    #bar
-    {
-      width:100%;
-      height: 50px;
-      //background:#000000;
-      bacground:black;
-      //margin-top:30px;
-      margin:auto;
-      display:flex;
-      flex-wrap:warp;
-      content:space-between;
-      //display:block;
-      position:fixed;
-    z-index:5;
-    }
-
-    #logo
-    {
-        width:7%;
-        background:white;
-        height: 50px;
-    }
-
-    #menu
-{
-width:65%;
-bacground:white;
-margin:auto;
-display:flex;
-flex-wrap:warp;
-justify-content:space-between;
-}
-
-#menu2 
-{
-width:90%;
-margin:auto;
-font-size:10px;
-text-align: center;
-//height:80px;
-bacground:yellow;
-//margin-left:380px;
-//margin-top:-80px;
-display:flex;
-flex-wrap:warp;
-justify-content:space-between;
-}
-
-#resume
-{
-    width:10%;
-    bacground:white;
-    text-align: center;
-    height: 50px;
-    font-size: 10px;
-    margin:auto;
-      display:flex;
-      flex-wrap:warp;
-      content:space-between;
-}
-
-.resume:hover
-{
-    background: white;
-    transition:0.40s;
-}
-
-#menu3
-{
-width:100%;
-background:rgba(246, 151, 56, 0.843);
-background:#000000;
-margin:auto;
-font-size: 10px;
-text-align:center;
-color: white;
-display:flex;
-flex-wrap:warp;
-justify-content:space-between;
-border-radius: 20px;
-}
-
-#work2
-{
-    width: 20%;
-    height: 30px;
-    background:#F8C164;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    border: 1px solid;
-    border-radius: 8px;
-    cursor: pointer;
-    display: flex;
-}
-
-#work2:hover
-{
-    background: black;
-    color: white;
-    transition:0.40s;
-}
-
-#text
-{
-    width: auto;
-    
-    font-size: 11px;
-    text-align: center;
-    
-}
-}
-
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {...}
-
-{
-    body{
-        background-color: green;
-    }
-
-    #bar
-    {
-      width:100%;
-      height: 50px;
-      //background:#000000;
-      background:black;
-      //margin-top:30px;
-      margin:auto;
-      display:flex;
-      flex-wrap:warp;
-      content:space-between;
-      //display:block;
-      position:fixed;
-    z-index:5;
-    }
-
-    #logo
-    {
-        width:7%;
-        background:white;
-        height: 50px;
-    }
-
-    #menu
-{
-width:65%;
-//background:white;
-margin:auto;
-display:flex;
-flex-wrap:warp;
-justify-content:space-between;
-}
-
-#menu2 
-{
-width:90%;
-margin:auto;
-font-size:10px;
-text-align: center;
-//height:80px;
-background:yellow;
-//margin-left:380px;
-//margin-top:-80px;
-display:flex;
-flex-wrap:warp;
-justify-content:space-between;
-}
-
-#resume
-{
-    width:10%;
-    //background:white;
-    text-align: center;
-    height: 50px;
-    margin:auto;
-      display:flex;
-      flex-wrap:warp;
-      content:space-between;
-}
-
-.resume:hover
-{
-    background: white;
-    transition:0.40s;
-}
-}
-
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {...}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {...}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {...}
-    
-
-</style>
-
 <body>
 
-    <div id="bar">
+    <div class="navbar phone">
 
-        
-        <div id="menu">
-    
-          <div id="menu2">
-          <div id="option"><a href="#aa">Home</div></a>
-          <div id="option"><a href="#2">About</div></a>
-          <div id="option"><a href="#3">Practice Work</div></a>
-          <div id="option"><a href="#4">Projects</div></a>
-          <div id="option"><a href="logo.html">Apps</div></a>
-          <div id="option"><a href="#5">Contect</div></a> 
-          
-          
-          </div>
-          
-          </div>
+        <div class="circle">
+            <img class="img" src="uximg/my logo white-01.png">
+        </div>
 
-          <div id="resume">
+        <div class="name">
+          <img class="name2" src="uximg/full name-02.png">
+        </div>
 
-            <div id="menu3">
-    
-                <div id="menu4">
-                <div id="option"><a href="resume.html" style="color:white;">Resume</div></a>
-                
-            
-                </div>
-          </div>
-    
-      </div></div>
+        <div class="nav ">
 
+            <div class="option"><a href="index.html">Home</div></a>
+            <div class="option"><a href="#2">About</div></a>
+            <div class="option"><a href="#3">Service</div></a>
+            <div class="option"><a href="#4">Projects</div></a>
+            <div class="option"><a href="#1">Apps</div></a>
+            <div class="option"><a href="#5">Contact</div></a>
+        </div>
+        <a href="shuaib ansari.pdf"><div class="resume">
+          RESUME</div></a>
+    </div>
+
+    <a name="aa">
+    <div class="home phone">
+
+      <div class="intro">
+
+        <div class="hello">Hello Everyone</div>
+        <div class="line"></div>
+        <div class="hello2">I'm <span>Shuaib Ansari,</span> <br>Graphic & UI / UX Designer</div>
+        <div class="hello3">Hi, I'm Shuaib Ansari, a freelance UI/UX designer passionate about crafting intuitive and engaging digital experiences. I blend creativity and functionality to design interfaces that truly connect with users.
+</div>
+      </div>
       
-      <a name="aa">
-        <div id="hello">
-        <img class="pic" src="image/02.png">
+      <div class="intro2">
+        <div class="ui">UI/UX Designer</div>
+        <div class="ui2">Freelancer</div>
+        <img class="image" src="uximg/my image 2.png">
+      </div>
+    </div>
+
+    
+
+    
+      <div class="toolsname2">Knowledge of Software</div>
+    
+    <div class="tools">
+      <div class="tools2">
+        <img class="toolsimg" src="uximg/1.png">
+      </div>
+      <div class="tools2">
+        <img class="toolsimg" src="uximg/2.png">
+      </div>
+      <div class="tools2">
+        <img class="toolsimg" src="uximg/3.png">
+      </div>
+      <div class="tools2"><img class="toolsimg" src="uximg/4.png"></div>
+      <div class="tools2"><img class="toolsimg" src="uximg/5.png"></div>
+      <div class="tools2"><img class="toolsimg" src="uximg/6.png"></div>
+      <div class="tools2"><img class="toolsimg" src="uximg/7.png"></div>
+      
+    </div>
+
+
+    <div class="toolsmore">
+      <div class="more">
+        <img class="toolsmoreimg" src="uximg/8.png">
+      </div>
+      <div class="more">
+        <img class="toolsmoreimg" src="uximg/9.png">
+      </div>
+      <div class="more">
+        <img class="toolsmoreimg" src="uximg/10.png">
+      </div>
+      <div class="more"><img class="toolsmoreimg" src="uximg/11.png"></div>
+      <div class="more"><img class="toolsmoreimg" src="uximg/12.png"></div>
+      <div class="more"><img class="toolsmoreimg" src="uximg/13.png"></div>
+      <div class="more"><img class="toolsmoreimg" src="uximg/14.png"></div>
     </div>
 
     <a name="2">
-      <div id="top">
-        <img class="pic" src="image/2.png">
-    </div>
-
-
-    <a name="3">
-    <div id="pages2">
-        <img class="pic" src="image/pages2.jpg">
-    </div></br></br></br></br>
-
-    <div id="work">
-
-        <div id="work2">
-            <div id="text">
-                <a href="work2.html">HTML
-        </div></a>
-        </div>
-        
-
-        <div id="work2">
-            <div id="text">
-                <a href="work3.html">JAVA SCRIPT
-        </div></a>
-        </div>
-
-        <div id="work2">
-            <div id="text">
-                <a href="work4.html">JQUERY
-        </div></a>
-        </div>
-
-        <div id="work2">
-            <div id="text">
-                <a href="work5.html">BOOTSTRAP
-        </div></a>
-        </div>
-
-    </div></br></br></br>
-
-    <a name="4">
-    <div id="projects">
-        <img class="pic" src="image/projects2.jpg"></br></br></br>
-
-        <div id="projects2">
-            <div id="work3">
-                <div id="text" style="color:black;">
-                    <a href="indipendance day.html"> INDIPENDANCE DAY
-            </div></a>
-            </div>
-    
-            <div id="work3" style="color:black;">
-                <div id="text">
-                    <a href="comic.html">COMIC
-            </div></a>
-            </div>
-
-            <div id="work3">
-                <div id="text">
-                    <a href="coffee website 2.html">TASTE MINGLE
-            </div></a>
-
-            
-
-            </div>
-
-            <div id="work3">
-                <div id="text">
-                    <a href="coffee website.html">COFFEE
-            </div></a>
-            </div>
-
-            <div id="work3">
-                <div id="text">
-                    <a href="gaganyaan.html">GAGANYAAN
-            </div></a>
-            </div>
-
-            
-        </div></br>
-
-        <div id="projects2">
-
-            <div id="work3">
-                <div id="text" style="color:black;">
-                    <a href="realstate.html"> REAL ESTATE
-            </div></a>
-            </div>
-
-            <div id="work3">
-                <div id="text" style="color:black;">
-                    <a href="solar.html"> SUNROVER
-            </div></a>
-            </div>
-        </div>
-
-        
-
-        </div>
-    </br></br>
-        
-
-        <div id="text2"></br>
-            All my work shows that my work is doing well or that I have tried to make my work better or that people have liked my work. I have got certificate for this work and I will try my best to do my work even better.</br></br>
-        </div></br></br>
-    </div></br></br>
-
-    <div id="pages2">
-        <img class="pic" src="image/contect.jpg">
-    </div></br></br>
-
-
-    <a name="5">
-    <div id="contect">
-        <div id="contect2">
-            <a href="https://creativework2004.github.io/shuaibansari123/"   >
-            <img class="pic2" src="image/ca1.png">
-        </div>
-        <div id="contect2">
-            <a href="https://in.pinterest.com/Code_vibe_01/"   >
-            <img class="pic2" src="image/ca2.png">
-        </div>
-        <div id="contect2">
-            <a href="https://www.behance.net/shuaib_ansari14"   >
-            <img class="pic2" src="image/ca3.png">
-        </div>
-        <div id="contect2">
-            <a href="https://www.youtube.com/@Code_vibe_01"   >
-            <img class="pic2" src="image/ca4.png">
-        </div>
-        <div id="contect2">
-            <a href="https://www.instagram.com/code_vibe_01/"   >
-            <img class="pic2" src="image/ca5.png">
-        </div>
-    </div></br></br>
-
-    
-
-    <div id="pages2">
-        <img class="pic" src="image/thanks.png">
-    </div>
+      <div class="aboutlink"></div></a>
+    <div class="about phone">
+      <div class="blank">
+      <div class="about3">
+        <img class="aboutimg" src="uximg/my image 3.png">
+      </div>
+    <div class="about2">
+      <div class="title">About Me</div><br>     Hello! I'm Shuaib Ansari, as a UI/UX designer, i bring a fresh blent of creativity and analytical thinking to the design principles, i am committed to crafting intuitive and engaging interfaces. <br><br>My passion lies in understanding user needs and translating them into seamless digital experiences. Eager to learn and grow within this dynamic field, i am on a constant quest to absorb new trends and technologies, aiming to contribute meaningfully to projects that enhance user satisfaction and interaction.<br><br><br><a href="shuaib ansari.pdf" download=""><div class="cv">DOWNLOAD CV</div></a></div>
       
+  </div></div>
+
+
+  <a name="3">
+    <div class="sarvicelink"></div>
+  <div class="services phone">Services I Provide</div>
+
+  <div class="services2 phone">
+    <div class="services3">
+      <div class="icon">
+        <img class="icon2" src="uximg/developer-01.png">
+      </div><br>
+      <div class="text"><span2>Web Developer</span2><br><br>
+      I craft and maintain responsive, user-friendly websites that blend functionality with modern design. My focus is on delivering seamless digital experiences through clean code and innovative solutions.
+</div>
+    </div>
+    <div class="services3">
+      <div class="icon">
+        <img class="icon2" src="uximg/designer-01.png">
+      </div><br>
+      <div class="text"><span2>Web Designer</span2><br><br>
+      A web designer crafts visually appealing and user-friendly websites that combine creativity with functionality. They focus on layout, color schemes, typography, and interactive elements to create engaging online experiences.
+</div>
+    </div>
+    <div class="services3">
+      <div class="icon">
+        <img class="icon2" src="uximg/graphic-01.png">
+      </div><br>
+      <div class="text"><span2>Graphic Designer</span2><br><br>
+      A graphic designer creates visual content that communicates ideas and messages effectively. They use color, typography, and imagery to design materials that inspire, inform, and captivate audiences.
+</div>
+    </div>
+  </div>
+
+  <a name="4">
+    <div class="projectlink"></div>
+  <div class="projects phone">My Projects</div>
+
+  <div class="projects2 phone">
+    <div class="projects3 ">
+      <a href="https://creativework2004.github.io/One-Plate/"><img class="website" src="uximg/website 1.png"></a>
+    </div>
+    <div class="projects3">
+      <a href="https://creativework2004.github.io/VTA-FOTO/"><img class="website" src="uximg/website 2.png"></a>
+    </div>
+    <div class="projects3">
+      <a href="https://creativework2004.github.io/ici-ice/"><img class="website" src="uximg/website 3.png"></a>
+    </div>
+    <div class="projects3">
+      <a href="https://creativework2004.github.io/auco/"><img class="website" src="uximg/website 4.png"></a>
+    </div>
+  </div>
+
+  <div class="projects0 phone">
+    <div class="projects3">
+      <a href="https://creativework2004.github.io/InvokeCars/"><img class="website" src="uximg/website 5.png"></a>
+    </div>
+    <div class="projects3">
+      <a href="https://creativework2004.github.io/shuaibansari123/coffee%20website%202.html"><img class="website" src="uximg/website 6.png"></a>
+    </div>
+    <div class="projects3">
+      <a href="https://creativework2004.github.io/shuaibansari123/comic.html"><img class="website" src="uximg/website 7.png"></a>
+    </div>
+    <div class="projects3">
+      <a href="https://creativework2004.github.io/shuaibansari123/indipendance%20day.html"><img class="website" src="uximg/website 8.png"></a>
+    </div>
+  </div>
+
+
+  
+
+  <a href="prectice.html"><div class="see phone">See My Prectice work        &#8594</div></a>
+
+  <div class="headline phone">
+    <img class="line" src="uximg/headline-01.png">
+  </div>
+
+  <a name="5">
+    <div class="contectlink"></div>
+  <div class="contect phone">Contect Us</div>
+
+  <div class="contect2 phone">
+    <div class="contect3">
+      <a href=""><img class="contect4" src="uximg/contect 1.png"></a>
+    </div>
+    <div class="contect3">
+      <a href="https://www.behance.net/shuaib_ansari14"><img class="contect4" src="uximg/contect 2.png"></a>
+    </div>
+    <div class="contect3">
+      <a href="https://www.instagram.com/code_vibe_01/?next=%2F"><img class="contect4" src="uximg/contect 3.png"></a>
+    </div>
+    <div class="contect3">
+      <a href="https://www.youtube.com/@Code_vibe_01/videos"><img class="contect4" src="uximg/contect 4.png"></a>
+    </div>
+    <div class="contect3">
+      <a href="https://wa.me/919319654221"><img class="contect4" src="uximg/contect 5.png"></a>
+    </div>
+  </div>
+
+  <div class="last"></div>
+
+
+    <!--Phone-->
+
+    <div class="off-screen-menu phone ul">
+      <ul>
+        <li><a href="#">Home</a></li><br>
+        <li><a href="#b">About</a></li><br>
+        <li><a href="#c">Service</a></li><br>
+        <li><a href="#d">Projects</a></li><br>
+        <li><a href="#">Apps</a></li><br>
+        <li><a href="#e">Contact</a></li><br>
+        <li><a href="shuaib ansari.pdf">Resume</a></li>
+      </ul>
+    </div>
+
+    <nav>
+      <div class="ham-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <div class="phonehome laptop ">
+
+      <div class="phoneintro">
+        <div class="phonehello">Hello Everyone</div>
+        <div class="phonehello2">I'm <span>Shuaib Ansari,</span> <br>Graphic & UI / UX Designer</div>
+      
+      <div class="phonehello3">Hi, I'm Shuaib Ansari, a freelance UI/UX designer passionate about crafting intuitive and engaging digital experiences. I blend creativity and functionality to design interfaces that truly connect with users.</div></div>
+      <div class="myimage">
+        <div class="phoneui">UI/UX Designer</div>
+        <div class="phoneui2">Freelancer</div>
+        <img class="myimage2" src="uximg/my image 2.png">
+      </div>
+    </div>
+
+    
+      
+
+    <div class="about laptop">
+      <a name="b"></a>
+      <div class="about2">
+        <img class="aboutimg" src="uximg/my image 4-01.png">
+      </div>
+
+      
+      <div class="about3">
+        <div class="title">About Me</div><br>
+        Hello! I'm Shuaib Ansari, as a UI/UX designer, i bring a fresh blent of creativity and analytical thinking to the design principles, i am committed to crafting intuitive and engaging interfaces. <br><br>My passion lies in understanding user needs and translating them into seamless digital experiences. Eager to learn and grow within this dynamic field, i am on a constant quest to absorb new trends and technologies, aiming to contribute meaningfully to projects that enhance user satisfaction and interaction.<br><br>
+        <a href="shuaib ansari.pdf" download=""><div class="text">DOWNLOAD CV</div></a><br>
+      </div>
+    </div>
+
+    <a name="c"></a>
+    
+    <div class="services laptop">Services I Provide</div>
+
+    <div class="services0 loptop">
+      <div class="services01 laptop">
+        <div class="services02 laptop">
+          <img class="services03" src="uximg/developer-01.png">
+        </div><br>
+        <span3>Web Developer</span3><br><br>
+      I craft and maintain responsive, user-friendly websites that blend functionality with modern design. My focus is on delivering seamless digital experiences through clean code and innovative solutions.
+      </div><br>
+      <div class="services01 laptop">
+        <div class="services02 laptop">
+          <img class="services03" src="uximg/designer-01.png">
+        </div><br>
+        <span3>Web Designer</span3><br><br>
+      A web designer crafts visually appealing and user-friendly websites that combine creativity with functionality. They focus on layout, color schemes, typography, and interactive elements to create engaging online experiences.
+      </div><br>
+      <div class="services01 laptop">
+        <div class="services02 laptop">
+          <img class="services03" src="uximg/graphic-01.png">
+        </div><br>
+        <span3>Graphic Designer</span3><br><br>
+      A graphic designer creates visual content that communicates ideas and messages effectively. They use color, typography, and imagery to design materials that inspire, inform, and captivate audiences.
+      </div>
+    </div>
+
+    <div class="project laptop">My Projects</div>
+
+    <div class="projects2 laptop">
+    <div class="projects3 laptop ">
+      <img class="website" src="uximg/website 1.png">
+    </div>
+    <div class="projects3 laptop">
+      <img class="website" src="uximg/website 2.png">
+    </div>
+    <div class="projects3 laptop">
+      <img class="website" src="uximg/website 3.png">
+    </div>
+    <div class="projects3 laptop">
+      <img class="website" src="uximg/website 4.png">
+    </div>
+
+    <div class="projects3 laptop">
+      <img class="website" src="uximg/website 5.png">
+    </div>
+    <div class="projects3 laptop">
+      <img class="website" src="uximg/website 6.png">
+    </div>
+    <div class="projects3 laptop">
+      <img class="website" src="uximg/website 7.png">
+    </div>
+    <div class="projects3 laptop">
+      <img class="website" src="uximg/website 8.png">
+    </div>
+  </div>
+
+ <div class="see2 laptop">See My Prectice work        &#8594</div>
+    
+  </div>
+
+   <div class="headline2 laptop">
+    <img class="line2" src="uximg/headline-01.png">
+  </div>
+
+  <div class="contectphone laptop">Contect Us</div>
+
+  <div class="last"></div>
+    
+
+    <script src="./app.js"></script>
     
 </body>
 </html>
